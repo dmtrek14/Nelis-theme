@@ -1,17 +1,171 @@
-@padding: 6px;
+/******* COLORS ***********/
+@main: #30415b;
+@text-on-main-bg: #fcfcfc; 
+@background-base: #fbfcfd;
+@header-text-base: #3d4551;
+@link-base: #345d96;
+@accent-cool-base: #86b98e;
+@accent-warm-base: #ffbe2e;
+@secondary-warm: #c7a97b;
 
-nav {
-  ul {
-    margin: 0;
-    padding: @padding;
-    list-style: none;
+@accent-cool-base-hover: darken(@accent-cool-base, 20%);
+@accent-warm-base-hover: darken(@accent-warm-base, 20%);
+
+@active-text-breadcrumb: #71767a;
+/*Bootstrap overrides*/
+@primary : #005ea2;
+@primary-hover: darken(@primary, 10%);
+@info: #168092;
+@info-hover: darken(@info, 10%);
+@success: #208738;
+@success-hover: darken(@success, 10%);
+
+
+/************************/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700|Roboto+Condensed:400,700&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: @header-text-base;
+}
+
+a {
+  color: @link-base;
+  border: 2px solid transparent;
+  font-weight: bold;
+  &:focus {
+    border-color: @primary;
   }
+}
 
-  li { display: inline-block; }
-
+.main-bg {
+  background-color: @main;
+  color: @text-on-main-bg;
   a {
-    display: block;
-    padding: @padding 12px;
-    text-decoration: none;
+    color: @text-on-main-bg;
   }
+}
+
+.light-bg {
+  background-color: @background-base;
+}
+.navbar-shadow {
+  box-shadow: 2px 4px 10px -4px rgba(0, 0, 0, 0.2);
+}
+/*Breadcrumbs*/
+.breadcrumb {
+  font-size: 1rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-transform: uppercase;
+  background-color: transparent;
+  padding: 0 0 0.75rem 0rem;
+  .breadcrumb-item {
+    &.active{
+      color: @active-text-breadcrumb;
+
+    }   
+    a {
+      font-weight: normal;
+    }
+}
+}
+/*CARDS*/
+.card {
+  margin-bottom: 1.875rem;
+  border: none;
+  border-radius: 0;
+  -webkit-box-shadow: 0 10px 40px 0 rgba(62, 57, 107, 0.07), 0 2px 9px 0 rgba(62, 57, 107, 0.06);
+  box-shadow: 0 10px 40px 0 rgba(62, 57, 107, 0.07), 0 2px 9px 0 rgba(62, 57, 107, 0.06);
+
+  &-border-top {
+    &.accent-warm {
+      border-top: 2px solid @accent-warm-base;
+    }
+    &.accent-cool {
+      border-top: 2px solid @accent-cool-base;
+    }
+  }
+  &-border-bottom {
+    &.accent-warm {
+      border-bottom: 2px solid @accent-warm-base;
+    }
+    &.accent-cool {
+      border-bottom: 2px solid @accent-cool-base;
+    }
+  }
+  &-border-right {
+    &.accent-warm {
+      border-right: 2px solid @accent-warm-base;
+    }
+    &.accent-cool {
+      border-right: 2px solid @accent-cool-base;
+    }
+  }
+  &-border-left {
+    &.accent-warm {
+      border-left: 2px solid @accent-warm-base;
+    }
+    &.accent-cool {
+      border-left: 2px solid @accent-cool-base;
+    }
+  }
+}
+
+/******* BUTTONS ***********/
+
+.btn{
+ &-primary{
+  background-color: @primary;
+  border-color: @primary;
+  &:hover {
+    background-color: @primary-hover;
+  }
+ }
+ &-info {
+  background-color: @info;
+  border-color: @info;
+  &:hover {
+    background-color: @info-hover;
+  }
+  }
+ 
+ &-success {
+  background-color: @success;
+  border-color: @success;
+  &:hover{
+    background-color: @success-hover;
+  }
+ }
+
+ &-accent-cool {
+  background-color: @accent-cool-base;
+  border-color: @accent-cool-base;
+  color: black;
+  &:hover{
+    background-color: @accent-cool-base-hover;
+    border-color: @accent-cool-base-hover;
+    color:white;
+  }
+
+ }
+ &-accent-warm {
+   background-color: @accent-warm-base;
+   border-color: @accent-warm-base;
+   color: black;
+   &:hover {
+    background-color: @accent-warm-base-hover;
+    color:white;
+    border-color: @accent-warm-base-hover;
+   }
+
+ }
+}
+
+/**/
+.square {
+  border-radius: 0;
 }

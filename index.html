@@ -3,20 +3,142 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Bootstrap theming</title>
+        <title>Bootstrap theming - NELIS</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
     </head>
-    <body>
-        <header></header>
+    <body class="light-bg">
+        <header>
+            <nav class="navbar navbar-expand-md main-bg navbar-dark sticky-top">
+                <div class="container">
+                  <a class="navbar-brand" href="#">Top level - NV Leg menu</a>
+                </div>
+              </nav>
+        </header>
+        <nav class="navbar navbar-light bg-light sticky-top justify-content-between navbar-shadow">
+            <a class="navbar-brand">Navbar</a>
+            <form class="form-inline">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </nav>
         <main class="container-fluid">
             <div class="row">
-                <div class="col-lg-2 px-0"></div>
+                <div class="col-lg-2 px-0">
+                    <p>Sidebar to go here</p>
+                </div>
                 <div class="col-lg-10 mt-4">
-                    <h1>Boostrap Theming</h1>
+                    <h1>Boostrap Theming - Nelis</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#">Home</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Library</li>
+                        </ol>
+                      </nav>
+                    <p>Lorem ipsum dolor amet portland cloud bread jean shorts austin pug tumeric <a href="">messenger bag</a>. Pabst heirloom 90's pok pok aesthetic coloring book kitsch succulents pork belly church-key street art fingerstache quinoa messenger bag. Scenester sustainable activated charcoal meditation truffaut tumeric, godard offal vape coloring book lyft. Single-origin coffee truffaut fashion axe PBR&B, craft beer kickstarter deep v try-hard cloud bread selfies church-key. Ugh blue bottle woke, tilde mustache sriracha selfies literally gochujang deep v waistcoat fam cronut.
+
+                    </p>
+                    <div class="row">
+                        <div class="col">
+                            <h2>Cards</h2>
+                            <div class="card-deck">
+                                <div class="card">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                  </div>
+                                </div>
+                                <div class="card card-border-top accent-warm">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Card title - border top (warm)</h5>
+                                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                  </div>
+                                </div>
+                                <div class="card card-border-top accent-cool">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Card title - border top (cool)</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-12">
+                            <h2>Buttons</h2>
+                        </div>
+                        <div class="col-12">
+                            <button type="button" class="btn btn-primary square">Primary</button>
+                            <button type="button" class="btn btn-secondary">Secondary</button>
+                            <button type="button" class="btn btn-success">Success</button>
+                            <button type="button" class="btn btn-danger">Danger</button>
+                            <button type="button" class="btn btn-warning">Warning</button>
+                            <button type="button" class="btn btn-info">Info</button>
+                            <button type="button" class="btn btn-light">Light</button>
+                            <button type="button" class="btn btn-dark">Dark</button>
+
+                            <button type="button" class="btn btn-link">Link</button>
+                        </div>
+                        <div class="col-12 mt-3">
+                            <button type="button" class="btn btn-accent-cool">Cool Accent</button>
+                            <button type="button" class="btn btn-accent-warm">Warm Accent</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
-        <footer></footer>
+        <footer class="main-bg mt-4">
+            <div class="container-fluid p-3 p-md-5">
+                <div class="row">
+                    <div class="col-md">
+                        <div class="media">
+                            <img src="https://www.leg.state.nv.us/App/NELIS/REL/Images/lcb-seal.png" class="align-self-center mr-3 d-none d-md-block" alt="Legislative Counsel Bureau Seal">
+                            <div class="media-body">
+                                <p>
+                                    </p><address>Nevada State Legislature<br>
+                                    401 S. Carson St.<br>
+                                    Carson City, NV 89701 <br>
+                                    775-684-6800
+                                    </address>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="/general/feedback.html">Contact</a>
+                            </li>
+                            <li>
+                                <a href="#" class="feedback" title="This link opens a feedback form in a dialog" onclick="fby.push(['showForm', '13587']);return false;">Website Feedback</a>
+                            </li>
+                            <li>
+                                <a href="/App/CareerOpenings/A/Default.aspx">Employment Opportunities</a>
+                            </li>
+                            <li>
+                                <a href="https://shop.leg.state.nv.us/">Gift Shop</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md">
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="/universalaccess.htm">Accessibility</a>
+                            </li>
+                            <li>
+                                <a href="http://nv.gov/privacy-policy/">Privacy Policy <i class="fa fa-external-link" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="/App/rfp/A/Default.aspx">Requests for Proposal</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

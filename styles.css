@@ -1,13 +1,170 @@
-nav ul {
-  margin: 0;
-  padding: 6px;
-  list-style: none;
+/******* COLORS ***********/
+/*Bootstrap overrides*/
+/************************/
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(https://fonts.gstatic.com/s/opensans/v17/mem6YaGs126MiZpBA-UFUK0Zdcg.ttf) format('truetype');
 }
-nav li {
-  display: inline-block;
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
 }
-nav a {
-  display: block;
-  padding: 6px 12px;
-  text-decoration: none;
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UNirkOUuhs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN7rgOUuhs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto Condensed'), local('RobotoCondensed-Regular'), url(https://fonts.gstatic.com/s/robotocondensed/v18/ieVl2ZhZI2eCN5jzbjEETS9weq8-19K7CA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Roboto Condensed Bold'), local('RobotoCondensed-Bold'), url(https://fonts.gstatic.com/s/robotocondensed/v18/ieVi2ZhZI2eCN5jzbjEETS9weq8-32meGCQYag.ttf) format('truetype');
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #3d4551;
+}
+a {
+  color: #345d96;
+  border: 2px solid transparent;
+  font-weight: bold;
+}
+a:focus {
+  border-color: #005ea2;
+}
+.main-bg {
+  background-color: #30415b;
+  color: #fcfcfc;
+}
+.main-bg a {
+  color: #fcfcfc;
+}
+.light-bg {
+  background-color: #fbfcfd;
+}
+.navbar-shadow {
+  box-shadow: 2px 4px 10px -4px rgba(0, 0, 0, 0.2);
+}
+/*Breadcrumbs*/
+.breadcrumb {
+  font-size: 1rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-transform: uppercase;
+  background-color: transparent;
+  padding: 0 0 0.75rem 0rem;
+}
+.breadcrumb .breadcrumb-item.active {
+  color: #71767a;
+}
+.breadcrumb .breadcrumb-item a {
+  font-weight: normal;
+}
+/*CARDS*/
+.card {
+  margin-bottom: 1.875rem;
+  border: none;
+  border-radius: 0;
+  -webkit-box-shadow: 0 10px 40px 0 rgba(62, 57, 107, 0.07), 0 2px 9px 0 rgba(62, 57, 107, 0.06);
+  box-shadow: 0 10px 40px 0 rgba(62, 57, 107, 0.07), 0 2px 9px 0 rgba(62, 57, 107, 0.06);
+}
+.card-border-top.accent-warm {
+  border-top: 2px solid #ffbe2e;
+}
+.card-border-top.accent-cool {
+  border-top: 2px solid #86b98e;
+}
+.card-border-bottom.accent-warm {
+  border-bottom: 2px solid #ffbe2e;
+}
+.card-border-bottom.accent-cool {
+  border-bottom: 2px solid #86b98e;
+}
+.card-border-right.accent-warm {
+  border-right: 2px solid #ffbe2e;
+}
+.card-border-right.accent-cool {
+  border-right: 2px solid #86b98e;
+}
+.card-border-left.accent-warm {
+  border-left: 2px solid #ffbe2e;
+}
+.card-border-left.accent-cool {
+  border-left: 2px solid #86b98e;
+}
+/******* BUTTONS ***********/
+.btn-primary {
+  background-color: #005ea2;
+  border-color: #005ea2;
+}
+.btn-primary:hover {
+  background-color: #00406f;
+}
+.btn-info {
+  background-color: #168092;
+  border-color: #168092;
+}
+.btn-info:hover {
+  background-color: #0f5966;
+}
+.btn-success {
+  background-color: #208738;
+  border-color: #208738;
+}
+.btn-success:hover {
+  background-color: #165e27;
+}
+.btn-accent-cool {
+  background-color: #86b98e;
+  border-color: #86b98e;
+  color: black;
+}
+.btn-accent-cool:hover {
+  background-color: #508959;
+  border-color: #508959;
+  color: white;
+}
+.btn-accent-warm {
+  background-color: #ffbe2e;
+  border-color: #ffbe2e;
+  color: black;
+}
+.btn-accent-warm:hover {
+  background-color: #c78900;
+  color: white;
+  border-color: #c78900;
+}
+/**/
+.square {
+  border-radius: 0;
 }
