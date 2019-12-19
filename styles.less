@@ -8,10 +8,14 @@
 @accent-warm-base: #ffbe2e;
 @secondary-warm: #c7a97b;
 
+@divider-base: #e6e6e6;
+
+@main-hover: lighten(@main, 20%);
 @accent-cool-base-hover: darken(@accent-cool-base, 20%);
 @accent-warm-base-hover: darken(@accent-warm-base, 20%);
+@secondary-warm-hover: darken(@secondary-warm, 20%);
 
-@active-text-breadcrumb: #71767a;
+@active-text-breadcrumb: #565c65;
 /*Bootstrap overrides*/
 @primary : #005ea2;
 @primary-hover: darken(@primary, 10%);
@@ -35,11 +39,12 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   color: @link-base;
-  border: 2px solid transparent;
   font-weight: bold;
-  &:focus {
-    border-color: @primary;
+
+  &:focus, &:hover {
+    outline: 2px dashed @link-base;
   }
+
 }
 
 .main-bg {
@@ -47,12 +52,18 @@ a {
   color: @text-on-main-bg;
   a {
     color: @text-on-main-bg;
+    &:focus, &:hover {
+      // background-color: @main-hover;
+      outline: 2px dashed @text-on-main-bg;
+    }
   }
 }
 
 .light-bg {
   background-color: @background-base;
 }
+
+
 .navbar-shadow {
   box-shadow: 2px 4px 10px -4px rgba(0, 0, 0, 0.2);
 }
@@ -113,6 +124,21 @@ a {
       border-left: 2px solid @accent-cool-base;
     }
   }
+
+  .card-header {
+    background-color: white;
+    border-bottom: none;
+    border-radius: 0;
+  }
+
+  .card-footer {
+    background-color: white;
+    border-radius: 0;
+    border-top: none;
+    &-border-top {
+      border-top: 1px solid @divider-base;
+    }
+  }
 }
 
 /******* BUTTONS ***********/
@@ -125,6 +151,14 @@ a {
     background-color: @primary-hover;
   }
  }
+ &-outline-primary {
+  border-color: @primary;
+  background-color: white;
+  color: @primary;
+  &:hover{
+    background-color: @primary-hover;
+  }
+ }
  &-info {
   background-color: @info;
   border-color: @info;
@@ -132,7 +166,14 @@ a {
     background-color: @info-hover;
   }
   }
- 
+ &-outline-info {
+  border-color: @info;
+  background-color: white;
+  color: @info; 
+  &:hover{
+    background-color: @info-hover;
+  }
+ }
  &-success {
   background-color: @success;
   border-color: @success;
@@ -140,7 +181,17 @@ a {
     background-color: @success-hover;
   }
  }
-
+ &-outline-success {
+  border-color: @success;
+  background-color: white;
+  color: @success;
+  &:hover{
+    background-color: @success-hover;
+  }
+ }
+ &-link {
+   color: @link-base;
+ }
  &-accent-cool {
   background-color: @accent-cool-base;
   border-color: @accent-cool-base;
@@ -161,8 +212,30 @@ a {
     color:white;
     border-color: @accent-warm-base-hover;
    }
-
  }
+ &-secondary-warm {
+   background-color: @secondary-warm;
+   border-color: @secondary-warm;
+   color: black;
+   &:hover {
+     background-color: @secondary-warm-hover;
+     border-color:@secondary-warm-hover;
+     color: white;
+   }
+ }
+}
+
+.bg-accent-cool {
+  background-color: @accent-cool-base !important;
+  color: black;
+}
+.bg-accent-warm {
+  background-color: @accent-warm-base !important;
+  color: black;
+}
+.bg-secondary-warm {
+  background-color: @secondary-warm !important;
+  color: black;
 }
 
 /**/

@@ -41,6 +41,7 @@
                     <div class="row">
                         <div class="col">
                             <h2>Cards</h2>
+                            <hr class="my-2">
                             <div class="card-deck">
                                 <div class="card">
                                   <div class="card-body">
@@ -59,19 +60,54 @@
                                 <div class="card card-border-top accent-cool">
                                   <div class="card-body">
                                     <h5 class="card-title">Card title - border top (cool)</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                    <p class="card-text">This card also has a footer internal to the body.</p>
+                                    <div class="card-footer card-footer-border-top">
+                                        <small class="text-muted">With a bordered footer</small>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card-deck mt-5">
+                                <div class="card">
+                                    <div class="card-header">
+                                        This is a header
+                                    </div>
+                                  <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                   </div>
                                 </div>
-                              </div>
+                                <div class="card">
+                                    <div class="card-header bg-secondary-warm">
+                                        This is a header with background (secondary warm)
+                                    </div>
+                                  <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Card title - border top (cool)</h5>
+                                    <p class="card-text">This card also has a footer internal to the body.</p>
+                                  </div>
+                                  <div class="card-footer bg-accent-cool">
+                                      Footer with background (accent cool)
+                                  </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="row mt-5">
                         <div class="col-12">
                             <h2>Buttons</h2>
+                            <hr class="my-2">
                         </div>
                         <div class="col-12">
-                            <button type="button" class="btn btn-primary square">Primary</button>
+                            <h3>Bootstrap defaults - colors overridden</h3>
+                            <button type="button" class="btn btn-primary">Primary</button>
                             <button type="button" class="btn btn-secondary">Secondary</button>
                             <button type="button" class="btn btn-success">Success</button>
                             <button type="button" class="btn btn-danger">Danger</button>
@@ -83,8 +119,21 @@
                             <button type="button" class="btn btn-link">Link</button>
                         </div>
                         <div class="col-12 mt-3">
+                            <h3>Square buttons</h3>
+                            <button type="button" class="btn btn-primary square">Primary</button>
+                            <button type="button" class="btn btn-secondary square">Secondary</button>
+                            <button type="button" class="btn btn-success square">Success</button>
+                            <button type="button" class="btn btn-danger square">Danger</button>
+                            <button type="button" class="btn btn-warning square">Warning</button>
+                            <button type="button" class="btn btn-info square">Info</button>
+                            <button type="button" class="btn btn-light square">Light</button>
+                            <button type="button" class="btn btn-dark square">Dark</button>
+                        </div>
+                        <div class="col-12 mt-3">
+                            <h3>Buttons with Theme Colors</h3>
                             <button type="button" class="btn btn-accent-cool">Cool Accent</button>
                             <button type="button" class="btn btn-accent-warm">Warm Accent</button>
+                            <button type="button" class="btn btn-secondary-warm">Secondary warm</button>
                         </div>
                     </div>
                 </div>

@@ -57,11 +57,11 @@ h6 {
 }
 a {
   color: #345d96;
-  border: 2px solid transparent;
   font-weight: bold;
 }
-a:focus {
-  border-color: #005ea2;
+a:focus,
+a:hover {
+  outline: 2px dashed #345d96;
 }
 .main-bg {
   background-color: #30415b;
@@ -69,6 +69,10 @@ a:focus {
 }
 .main-bg a {
   color: #fcfcfc;
+}
+.main-bg a:focus,
+.main-bg a:hover {
+  outline: 2px dashed #fcfcfc;
 }
 .light-bg {
   background-color: #fbfcfd;
@@ -85,7 +89,7 @@ a:focus {
   padding: 0 0 0.75rem 0rem;
 }
 .breadcrumb .breadcrumb-item.active {
-  color: #71767a;
+  color: #565c65;
 }
 .breadcrumb .breadcrumb-item a {
   font-weight: normal;
@@ -122,12 +126,33 @@ a:focus {
 .card-border-left.accent-cool {
   border-left: 2px solid #86b98e;
 }
+.card .card-header {
+  background-color: white;
+  border-bottom: none;
+  border-radius: 0;
+}
+.card .card-footer {
+  background-color: white;
+  border-radius: 0;
+  border-top: none;
+}
+.card .card-footer-border-top {
+  border-top: 1px solid #e6e6e6;
+}
 /******* BUTTONS ***********/
 .btn-primary {
   background-color: #005ea2;
   border-color: #005ea2;
 }
 .btn-primary:hover {
+  background-color: #00406f;
+}
+.btn-outline-primary {
+  border-color: #005ea2;
+  background-color: white;
+  color: #005ea2;
+}
+.btn-outline-primary:hover {
   background-color: #00406f;
 }
 .btn-info {
@@ -137,12 +162,31 @@ a:focus {
 .btn-info:hover {
   background-color: #0f5966;
 }
+.btn-outline-info {
+  border-color: #168092;
+  background-color: white;
+  color: #168092;
+}
+.btn-outline-info:hover {
+  background-color: #0f5966;
+}
 .btn-success {
   background-color: #208738;
   border-color: #208738;
 }
 .btn-success:hover {
   background-color: #165e27;
+}
+.btn-outline-success {
+  border-color: #208738;
+  background-color: white;
+  color: #208738;
+}
+.btn-outline-success:hover {
+  background-color: #165e27;
+}
+.btn-link {
+  color: #345d96;
 }
 .btn-accent-cool {
   background-color: #86b98e;
@@ -163,6 +207,28 @@ a:focus {
   background-color: #c78900;
   color: white;
   border-color: #c78900;
+}
+.btn-secondary-warm {
+  background-color: #c7a97b;
+  border-color: #c7a97b;
+  color: black;
+}
+.btn-secondary-warm:hover {
+  background-color: #9a7742;
+  border-color: #9a7742;
+  color: white;
+}
+.bg-accent-cool {
+  background-color: #86b98e !important;
+  color: black;
+}
+.bg-accent-warm {
+  background-color: #ffbe2e !important;
+  color: black;
+}
+.bg-secondary-warm {
+  background-color: #c7a97b !important;
+  color: black;
 }
 /**/
 .square {
