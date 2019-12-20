@@ -1,0 +1,34 @@
+/******* COLORS ***********/
+/*Bootstrap overrides*/
+/************************/
+/*Badges and badge pills*/
+.badge {
+  font-weight: 600;
+}
+.badge-primary {
+  background-color: #2672de;
+}
+.badge-info {
+  background-color: #3a7d95;
+}
+.badge-success {
+  background-color: #208738;
+}
+.badge-warning {
+  background-color: #fee685;
+}
+.badge-danger {
+  background-color: #cd425b;
+}
+.badge-accent-cool {
+  background-color: #86b98e;
+  color: black;
+}
+.badge-accent-warm {
+  background-color: #ffca56;
+  color: black;
+}
+.badge-secondary-warm {
+  background-color: #b0aaa6;
+  color: black;
+}

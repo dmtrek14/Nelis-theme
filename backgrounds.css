@@ -1,0 +1,96 @@
+/******* COLORS ***********/
+/*Bootstrap overrides*/
+/************************/
+.bg-main {
+  background-color: #30415b;
+  color: #fcfcfc;
+}
+.bg-main a {
+  color: #fcfcfc;
+  position: relative;
+  text-decoration: none;
+}
+.bg-main a:hover {
+  text-decoration: none;
+}
+.bg-main a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -1px;
+  left: 0;
+  background-color: #fcfcfc;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.bg-main a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.bg-main a:focus {
+  outline: 2px dashed #fcfcfc;
+}
+.bg-complement {
+  background-color: #fbfcfd;
+}
+.bg-main-lighten-10 {
+  background-color: #42597c !important;
+  color: white;
+}
+.bg-main-lighten-20 {
+  background-color: #53719e !important;
+  color: white;
+}
+.bg-main-lighten-30 {
+  background-color: #708bb4 !important;
+  color: black;
+}
+.bg-main-lighten-40 {
+  background-color: #92a6c5 !important;
+  color: black;
+}
+.bg-main-lighten-50 {
+  background-color: #b3c1d7 !important;
+  color: black;
+}
+.bg-accent-cool {
+  background-color: #86b98e !important;
+  color: black;
+}
+.bg-accent-cool-lighten-10 {
+  background-color: #a6ccac !important;
+  color: black;
+}
+.bg-accent-cool-lighten-20 {
+  background-color: #c7deca !important;
+  color: black;
+}
+.bg-accent-warm {
+  background-color: #ffca56 !important;
+  color: black;
+}
+.bg-accent-warm-lighten-10 {
+  background-color: #ffda89 !important;
+  color: black;
+}
+.bg-accent-warm-lighten-20 {
+  background-color: #ffeabc !important;
+  color: black;
+}
+.bg-secondary-warm {
+  background-color: #b0aaa6 !important;
+  color: black;
+}
+.bg-secondary-warm-lighten-10 {
+  background-color: #c8c4c1 !important;
+  color: black;
+}
+.bg-secondary-warm-lighten-20 {
+  background-color: #e0dedc !important;
+  color: black;
+}

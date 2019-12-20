@@ -1,0 +1,78 @@
+/******* COLORS ***********/
+/*Bootstrap overrides*/
+/************************/
+.border-main {
+  border: 2px solid #30415b;
+}
+.border-main-lighten-10 {
+  border: 2px solid #42597c;
+}
+.border-secondary-warm {
+  border: 2px solid #b0aaa6;
+}
+.border-accent-warm {
+  border: 2px solid #ffca56;
+}
+.border-accent-cool {
+  border: 2px solid #86b98e;
+}
+.border-top-main {
+  border-top: 2px solid #30415b;
+}
+.border-top-main-lighten-10 {
+  border-top: 2px solid #42597c;
+}
+.border-top-secondary-warm {
+  border-top: 2px solid #b0aaa6;
+}
+.border-top-accent-warm {
+  border-top: 2px solid #ffca56;
+}
+.border-top-accent-cool {
+  border-top: 2px solid #86b98e;
+}
+.border-bottom-main {
+  border-bottom: 2px solid #30415b;
+}
+.border-bottom-main-lighten-10 {
+  border-bottom: 2px solid #42597c;
+}
+.border-bottom-secondary-warm {
+  border-bottom: 2px solid #b0aaa6;
+}
+.border-bottom-accent-warm {
+  border-bottom: 2px solid #ffca56;
+}
+.border-bottom-accent-cool {
+  border-bottom: 2px solid #86b98e;
+}
+.border-right-main {
+  border-right: 2px solid #30415b;
+}
+.border-right-main-lighten-10 {
+  border-right: 2px solid #42597c;
+}
+.border-right-secondary-warm {
+  border-right: 2px solid #b0aaa6;
+}
+.border-right-accent-warm {
+  border-right: 2px solid #ffca56;
+}
+.border-right-accent-cool {
+  border-right: 2px solid #86b98e;
+}
+.border-left-main {
+  border-left: 2px solid #30415b;
+}
+.border-left-main-lighten-10 {
+  border-left: 2px solid #42597c;
+}
+.border-left-secondary-warm {
+  border-left: 2px solid #b0aaa6;
+}
+.border-left-accent-warm {
+  border-left: 2px solid #ffca56;
+}
+.border-left-accent-cool {
+  border-left: 2px solid #86b98e;
+}

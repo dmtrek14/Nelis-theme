@@ -1,0 +1,104 @@
+@import "colors.less";
+
+
+.bg-main {
+    background-color: @main;
+    color: @text-on-main-bg;
+  
+    a {
+      color: @text-on-main-bg;
+      position: relative;
+      text-decoration: none;
+    
+      &:hover {
+        text-decoration: none;
+      }
+  
+      &:before{
+        content: "";
+          position: absolute;
+          width: 100%;
+          height: 1px;
+          bottom: -1px;
+          left: 0;
+          background-color: @text-on-main-bg;
+          visibility: hidden;
+          -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+          -webkit-transition: all 0.3s ease-in-out 0s;
+          transition: all 0.3s ease-in-out 0s;
+      }
+    
+      &:hover:before{
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+      }
+  
+      &:focus {
+        outline: 2px dashed @text-on-main-bg;
+      }
+    }
+  }
+  
+  .bg-complement {
+    background-color: @background-base;
+  }
+  
+  .bg-main-lighten-10 {
+    background-color: lighten(@main, 10%) !important;
+    color: white;
+  }
+  .bg-main-lighten-20 {
+    background-color: lighten(@main, 20%) !important;
+    color: white;
+  }
+  .bg-main-lighten-30 {
+    background-color: lighten(@main, 30%) !important;
+    color: black;
+  }
+  .bg-main-lighten-40 {
+    background-color: lighten(@main, 40%) !important;
+    color: black;
+  }
+  .bg-main-lighten-50 {
+    background-color: lighten(@main, 50%) !important;
+    color: black;
+  }
+  .bg-accent-cool {
+    background-color: @accent-cool-base !important;
+    color: black;
+  }
+  .bg-accent-cool-lighten-10 {
+    background-color: lighten(@accent-cool-base, 10%) !important;
+    color: black;
+  }
+  .bg-accent-cool-lighten-20 {
+    background-color: lighten(@accent-cool-base, 20%) !important;
+    color: black;
+  }
+  .bg-accent-warm {
+    background-color: @accent-warm-base !important;
+    color: black;
+  }
+  .bg-accent-warm-lighten-10 {
+    background-color: lighten(@accent-warm-base, 10%) !important;
+    color: black;
+  }
+  .bg-accent-warm-lighten-20 {
+    background-color: lighten(@accent-warm-base, 20%) !important;
+    color: black;
+  }
+  .bg-secondary-warm {
+    background-color: @secondary-warm !important;
+    color: black;
+  }
+  .bg-secondary-warm-lighten-10 {
+    background-color: lighten(@secondary-warm, 10%)!important;
+    color: black;
+  }
+  .bg-secondary-warm-lighten-20 {
+    background-color: lighten(@secondary-warm, 20%)!important;
+    color: black;
+  }
+  
