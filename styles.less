@@ -34,7 +34,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700|Roboto+Condensed:400,700&display=swap');
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -326,40 +326,70 @@ a {
 
 /*backgrounds*/
 .bg-main-lighten-10 {
-  background-color: lighten(@main, 10%);
+  background-color: lighten(@main, 10%) !important;
   color: white;
 }
 .bg-main-lighten-20 {
-  background-color: lighten(@main, 20%);
+  background-color: lighten(@main, 20%) !important;
   color: white;
 }
 .bg-main-lighten-30 {
-  background-color: lighten(@main, 30%);
+  background-color: lighten(@main, 30%) !important;
   color: black;
 }
 .bg-main-lighten-40 {
-  background-color: lighten(@main, 40%);
+  background-color: lighten(@main, 40%) !important;
   color: black;
 }
 .bg-main-lighten-50 {
-  background-color: lighten(@main, 50%);
+  background-color: lighten(@main, 50%) !important;
   color: black;
 }
 .bg-accent-cool {
   background-color: @accent-cool-base !important;
   color: black;
 }
+.bg-accent-cool-lighten-10 {
+  background-color: lighten(@accent-cool-base, 10%) !important;
+  color: black;
+}
+.bg-accent-cool-lighten-20 {
+  background-color: lighten(@accent-cool-base, 20%) !important;
+  color: black;
+}
 .bg-accent-warm {
   background-color: @accent-warm-base !important;
+  color: black;
+}
+.bg-accent-warm-lighten-10 {
+  background-color: lighten(@accent-warm-base, 10%) !important;
+  color: black;
+}
+.bg-accent-warm-lighten-20 {
+  background-color: lighten(@accent-warm-base, 20%) !important;
   color: black;
 }
 .bg-secondary-warm {
   background-color: @secondary-warm !important;
   color: black;
 }
+.bg-secondary-warm-lighten-10 {
+  background-color: lighten(@secondary-warm, 10%)!important;
+  color: black;
+}
+.bg-secondary-warm-lighten-20 {
+  background-color: lighten(@secondary-warm, 20%)!important;
+  color: black;
+}
 
 /*borders*/
 &.border{
+  &-main {
+    border: 2px solid @main;
+  }
+  &-main-lighten-10 {
+    border: 2px solid lighten(@main, 10%);
+  }
   &-secondary-warm {
     border: 2px solid @secondary-warm;
   }
@@ -372,6 +402,12 @@ a {
 }
 
 &.border-top {
+  &-main {
+    border-top: 2px solid @main;
+  }
+  &-main-lighten-10 {
+    border-top: 2px solid lighten(@main, 10%);
+  }
   &-secondary-warm {
     border-top: 2px solid @secondary-warm;
   }
@@ -383,6 +419,12 @@ a {
   }
 }
 &.border-bottom {
+  &-main {
+    border-bottom: 2px solid @main;
+  }
+  &-main-lighten-10 {
+    border-bottom: 2px solid lighten(@main, 10%);
+  }
   &-secondary-warm {
     border-bottom: 2px solid @secondary-warm;
   }
@@ -394,6 +436,12 @@ a {
   }
 }
 &.border-right {
+  &-main {
+    border-right: 2px solid @main;
+  }
+  &-main-lighten-10 {
+    border-right: 2px solid lighten(@main, 10%);
+  }
   &-secondary-warm {
     border-right: 2px solid @secondary-warm;
   }
@@ -405,6 +453,12 @@ a {
   }
 }
 &.border-left {
+  &-main {
+    border-left: 2px solid @main;
+  }
+  &-main-lighten-10 {
+    border-left: 2px solid lighten(@main, 10%);
+  }
   &-secondary-warm {
     border-left: 2px solid @secondary-warm;
   }
