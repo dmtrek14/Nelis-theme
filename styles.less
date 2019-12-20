@@ -11,9 +11,9 @@
 @divider-base: #e6e6e6;
 
 @main-hover: lighten(@main, 20%);
-@accent-cool-base-hover: darken(@accent-cool-base, 20%);
-@accent-warm-base-hover: darken(@accent-warm-base, 30%);
-@secondary-warm-hover: darken(@secondary-warm, 20%);
+// @accent-cool-base-hover: darken(@accent-cool-base, 20%);
+// @accent-warm-base-hover: darken(@accent-warm-base, 30%);
+// @secondary-warm-hover: darken(@secondary-warm, 20%);
 
 @active-text-breadcrumb: #565c65;
 /*Bootstrap overrides*/
@@ -45,26 +45,79 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color: @link-base;
   font-weight: bold;
+  position: relative;
+  text-decoration: none;
 
-  &:focus, &:hover {
-    outline: 2px dashed @link-base;
+  &:hover {
+    text-decoration: none;
   }
 
+  &:before{
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      bottom: -1px;
+      left: 0;
+      background-color: @link-base;
+      visibility: hidden;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s;
+  }
+
+  &:hover:before{
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  &:focus {
+    outline: 2px dashed @link-base;
+  }
 }
 
-.main-bg {
+.bg-main {
   background-color: @main;
   color: @text-on-main-bg;
+
   a {
     color: @text-on-main-bg;
-    &:focus, &:hover {
-      // background-color: @main-hover;
+    position: relative;
+    text-decoration: none;
+  
+    &:hover {
+      text-decoration: none;
+    }
+
+    &:before{
+      content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        bottom: -1px;
+        left: 0;
+        background-color: @text-on-main-bg;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+    }
+  
+    &:hover:before{
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+    }
+
+    &:focus {
       outline: 2px dashed @text-on-main-bg;
     }
   }
 }
 
-.light-bg {
+.bg-complement {
   background-color: @background-base;
 }
 
@@ -96,39 +149,6 @@ a {
   border-radius: 0;
   -webkit-box-shadow: 0 10px 40px 0 rgba(62, 57, 107, 0.07), 0 2px 9px 0 rgba(62, 57, 107, 0.06);
   box-shadow: 0 10px 40px 0 rgba(62, 57, 107, 0.07), 0 2px 9px 0 rgba(62, 57, 107, 0.06);
-
-  &-border-top {
-    &.accent-warm {
-      border-top: 2px solid @accent-warm-base;
-    }
-    &.accent-cool {
-      border-top: 2px solid @accent-cool-base;
-    }
-  }
-  &-border-bottom {
-    &.accent-warm {
-      border-bottom: 2px solid @accent-warm-base;
-    }
-    &.accent-cool {
-      border-bottom: 2px solid @accent-cool-base;
-    }
-  }
-  &-border-right {
-    &.accent-warm {
-      border-right: 2px solid @accent-warm-base;
-    }
-    &.accent-cool {
-      border-right: 2px solid @accent-cool-base;
-    }
-  }
-  &-border-left {
-    &.accent-warm {
-      border-left: 2px solid @accent-warm-base;
-    }
-    &.accent-cool {
-      border-left: 2px solid @accent-cool-base;
-    }
-  }
 
   .card-header {
     background-color: white;
@@ -235,40 +255,41 @@ a {
  &-link {
    color: @link-base;
  }
- &-accent-cool {
-  background-color: @accent-cool-base;
-  border-color: @accent-cool-base;
-  color: black;
-  &:hover{
-    background-color: @accent-cool-base-hover;
-    border-color: @accent-cool-base-hover;
-    color:white;
-  }
+//  &-accent-cool {
+//   background-color: @accent-cool-base;
+//   border-color: @accent-cool-base;
+//   color: black;
+//   &:hover{
+//     background-color: @accent-cool-base-hover;
+//     border-color: @accent-cool-base-hover;
+//     color:white;
+//   }
 
- }
- &-accent-warm {
-   background-color: @accent-warm-base;
-   border-color: @accent-warm-base;
-   color: black;
-   &:hover {
-    background-color: @accent-warm-base-hover;
-    color:white;
-    border-color: @accent-warm-base-hover;
-   }
- }
- &-secondary-warm {
-   background-color: @secondary-warm;
-   border-color: @secondary-warm;
-   color: black;
-   &:hover {
-     background-color: @secondary-warm-hover;
-     border-color:@secondary-warm-hover;
-     color: white;
-   }
- }
+//  }
+//  &-accent-warm {
+//    background-color: @accent-warm-base;
+//    border-color: @accent-warm-base;
+//    color: black;
+//    &:hover {
+//     background-color: @accent-warm-base-hover;
+//     color:white;
+//     border-color: @accent-warm-base-hover;
+//    }
+//  }
+//  &-secondary-warm {
+//    background-color: @secondary-warm;
+//    border-color: @secondary-warm;
+//    color: black;
+//    &:hover {
+//      background-color: @secondary-warm-hover;
+//      border-color:@secondary-warm-hover;
+//      color: white;
+//    }
+//  }
 }
 /*Badges and badge pills*/
 .badge {
+  font-weight: 600;
   &-primary{
     background-color: @primary;
    }
@@ -298,12 +319,32 @@ a {
   }
 }
 
-/*ALerts*/
+/*Alerts*/
 .alert {
-  
+  border-radius: 0;
 }
 
 /*backgrounds*/
+.bg-main-lighten-10 {
+  background-color: lighten(@main, 10%);
+  color: white;
+}
+.bg-main-lighten-20 {
+  background-color: lighten(@main, 20%);
+  color: white;
+}
+.bg-main-lighten-30 {
+  background-color: lighten(@main, 30%);
+  color: black;
+}
+.bg-main-lighten-40 {
+  background-color: lighten(@main, 40%);
+  color: black;
+}
+.bg-main-lighten-50 {
+  background-color: lighten(@main, 50%);
+  color: black;
+}
 .bg-accent-cool {
   background-color: @accent-cool-base !important;
   color: black;
@@ -317,8 +358,63 @@ a {
   color: black;
 }
 
+/*borders*/
+&.border{
+  &-secondary-warm {
+    border: 2px solid @secondary-warm;
+  }
+  &-accent-warm {
+    border: 2px solid @accent-warm-base;
+  }
+  &-accent-cool {
+    border: 2px solid @accent-cool-base;
+  }
+}
 
-
+&.border-top {
+  &-secondary-warm {
+    border-top: 2px solid @secondary-warm;
+  }
+  &-accent-warm {
+    border-top: 2px solid @accent-warm-base;
+  }
+  &-accent-cool {
+    border-top: 2px solid @accent-cool-base;
+  }
+}
+&.border-bottom {
+  &-secondary-warm {
+    border-bottom: 2px solid @secondary-warm;
+  }
+  &-accent-warm {
+    border-bottom: 2px solid @accent-warm-base;
+  }
+  &-accent-cool {
+    border-bottom: 2px solid @accent-cool-base;
+  }
+}
+&.border-right {
+  &-secondary-warm {
+    border-right: 2px solid @secondary-warm;
+  }
+  &-accent-warm {
+    border-right: 2px solid @accent-warm-base;
+  }
+  &-accent-cool {
+    border-right: 2px solid @accent-cool-base;
+  }
+}
+&.border-left {
+  &-secondary-warm {
+    border-left: 2px solid @secondary-warm;
+  }
+  &-accent-warm {
+    border-left: 2px solid @accent-warm-base;
+  }
+  &-accent-cool {
+    border-left: 2px solid @accent-cool-base;
+  }
+}
 
 /**/
 .square {

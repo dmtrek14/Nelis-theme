@@ -9,13 +9,13 @@
     </head>
     <body class="light-bg">
         <header>
-            <nav class="navbar navbar-expand-md main-bg navbar-dark sticky-top">
+            <nav class="navbar navbar-expand-md bg-main navbar-dark sticky-top">
                 <div class="container">
                   <a class="navbar-brand" href="#">Top level - NV Leg menu</a>
                 </div>
               </nav>
         </header>
-        <nav class="navbar navbar-light bg-light sticky-top justify-content-between navbar-shadow">
+        <nav class="navbar navbar-light bg-complement sticky-top justify-content-between navbar-shadow">
             <a class="navbar-brand">Navbar</a>
             <form class="form-inline">
               <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -39,48 +39,79 @@
 
                     </p>
                     <div class="row">
+                      <div class="col">
+                        <h2>Colors</h2>
+                        <hr class="my-2">
+                        <div class="row">
+                          <div class="col">
+                            <h3>Main</h3>
+                            <div class="bg-main" style="padding: 5px;">Main base (.bg-main)</div>
+                            <div class="bg-main-lighten-10"style="padding: 5px;">Main lightened 10% (.bg-main-lighten-10)</div>
+                            <div class="bg-main-lighten-20"style="padding: 5px;">Main lightened 20% (.bg-main-lighten-20)</div>
+                            <div class="bg-main-lighten-30"style="padding: 5px;">Main lightened 30% (.bg-main-lighten-30)</div>
+                            <div class="bg-main-lighten-40"style="padding: 5px;">Main lightened 40% (.bg-main-lighten-40)</div>
+                            <div class="bg-main-lighten-50"style="padding: 5px;">Main lightened 50% (.bg-main-lighten-50)</div>
+                          </div>
+                          <div class="col">
+                            <h3>Complementary</h3>
+                            <div class="bg-complement" style="padding: 5px; border: 1px solid black;">Complementary bg (.bg-complement)</div>
+                            <div class="bg-secondary-warm" style="padding: 5px;">Secondary warm (.bg-secondary-warm)</div>
+                          </div>
+                          <div class="col">
+                            <h3>Accents</h3>
+                            <div class="bg-accent-cool" style="padding: 5px;">Cool accent (.bg-accent-cool)</div>
+                            <div class="bg-accent-warm" style="padding: 5px;">Warm accent (.bg-accent-warm)</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mt-5">
                         <div class="col">
                             <h2>Cards</h2>
                             <hr class="my-2">
                             <div class="card-deck">
-                                <div class="card">
+                                <div class="card border-left-secondary-warm">
                                   <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
+                                    <h5 class="card-title">Card title - border left (secondary warm)</h5>
                                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                   </div>
                                 </div>
-                                <div class="card card-border-top accent-warm">
+                                <div class="card border-top-accent-warm">
                                   <div class="card-body">
                                     <h5 class="card-title">Card title - border top (warm)</h5>
                                     <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                   </div>
                                 </div>
-                                <div class="card card-border-top accent-cool">
+                                <div class="card border-right-accent-cool">
                                   <div class="card-body">
-                                    <h5 class="card-title">Card title - border top (cool)</h5>
+                                    <h5 class="card-title">Card title - border right (cool)</h5>
                                     <p class="card-text">This card also has a footer internal to the body.</p>
                                     <div class="card-footer card-footer-border-top">
                                         <small class="text-muted">With a bordered footer</small>
                                     </div>
                                   </div>
                                 </div>
+                                
                             </div>
                             <div class="card-deck mt-5">
                                 <div class="card">
                                     <div class="card-header">
-                                        This is a header
+                                        This is a plain header
                                     </div>
                                   <div class="card-body">
                                     <h5 class="card-title">Card title</h5>
                                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                   </div>
+                                  <div class="card-footer bg-accent-warm">
+                                    Footer with background (accent warm)
+                                </div>
                                 </div>
                                 <div class="card">
                                     <div class="card-header bg-secondary-warm">
-                                        This is a header with background (secondary warm)
+                                        Header with background (secondary warm)
                                     </div>
                                   <div class="card-body">
                                     <h5 class="card-title">Card title</h5>
@@ -138,12 +169,6 @@
                             <button type="button" class="btn btn-light square">Light</button>
                             <button type="button" class="btn btn-dark square">Dark</button>
                         </div>
-                        <div class="col-12 mt-3">
-                            <h3>Buttons with theme colors</h3>
-                            <button type="button" class="btn btn-accent-cool">Cool Accent</button>
-                            <button type="button" class="btn btn-accent-warm">Warm Accent</button>
-                            <button type="button" class="btn btn-secondary-warm">Secondary warm</button>
-                        </div>
                     </div>
                     <div class="row mt-5">
                         <div class="col">
@@ -163,9 +188,9 @@
                         </div>
                         <div class="col-12 mt-3">
                             <h3>Badges with theme colors</h3>
-                            <span class="badge badge-accent-cool">Cool Accent</span>
-                            <span class="badge badge-accent-warm">Warm Accent</span>
                             <span class="badge badge-secondary-warm">Secondary Warm</span>
+                            <span class="badge badge-accent-cool">Cool Accent</span>
+                            <span class="badge badge-accent-warm">Warm Accent</span>            
                         </div>
                     </div>
                     <div class="row mt-5">
@@ -204,7 +229,7 @@
                 </div>
             </div>
         </main>
-        <footer class="main-bg mt-4">
+        <footer class="bg-main mt-4">
             <div class="container-fluid p-3 p-md-5">
                 <div class="row">
                     <div class="col-md">
