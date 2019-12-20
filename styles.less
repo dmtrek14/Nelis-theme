@@ -19,6 +19,7 @@
 /*Bootstrap overrides*/
 @primary : #2672de;
 @primary-hover: darken(@primary, 10%);
+@secondary: #6c757d;
 @info: #3a7d95;
 @info-hover: darken(@info, 10%);
 @success: #208738;
@@ -28,7 +29,7 @@
 @danger: #cd425b;
 @danger-hover: darken(@danger, 10%);
 @light-outline: #adadad;
-
+@dark: #343a40;
 
 /************************/
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700|Roboto+Condensed:400,700&display=swap');
@@ -255,37 +256,6 @@ a {
  &-link {
    color: @link-base;
  }
-//  &-accent-cool {
-//   background-color: @accent-cool-base;
-//   border-color: @accent-cool-base;
-//   color: black;
-//   &:hover{
-//     background-color: @accent-cool-base-hover;
-//     border-color: @accent-cool-base-hover;
-//     color:white;
-//   }
-
-//  }
-//  &-accent-warm {
-//    background-color: @accent-warm-base;
-//    border-color: @accent-warm-base;
-//    color: black;
-//    &:hover {
-//     background-color: @accent-warm-base-hover;
-//     color:white;
-//     border-color: @accent-warm-base-hover;
-//    }
-//  }
-//  &-secondary-warm {
-//    background-color: @secondary-warm;
-//    border-color: @secondary-warm;
-//    color: black;
-//    &:hover {
-//      background-color: @secondary-warm-hover;
-//      border-color:@secondary-warm-hover;
-//      color: white;
-//    }
-//  }
 }
 /*Badges and badge pills*/
 .badge {
@@ -322,6 +292,121 @@ a {
 /*Alerts*/
 .alert {
   border-radius: 0;
+  border: none;
+  -webkit-box-shadow: 0 3px 5px 0 rgba(62, 57, 107, 0.07), 0 2px 4px 0 rgba(62, 57, 107, 0.06);
+  box-shadow: 0 3px 5px 0 rgba(62, 57, 107, 0.07), 0 2px 4px 0 rgba(62, 57, 107, 0.06);
+
+  &.alert-primary {
+      color: darken(@primary, 20%);
+      border-left: 10px solid darken(@primary, 10%);
+      background-color: lighten(@primary, 43%);
+      .alert-link {
+        color: darken(@primary, 30%);
+        &:before {
+          background-color: darken(@primary, 30%);
+        }
+        &:focus {
+          outline: 2px dashed darken(@primary, 30%);
+        }
+     }
+  }
+  &.alert-secondary {
+    border-left: 10px solid darken(@secondary, 10%);
+    .alert-link {
+      color: darken(@secondary, 30%);
+      &:before {
+        background-color: darken(@secondary, 30%);
+      }
+      &:focus {
+        outline: 2px dashed darken(@secondary, 30%);
+      }
+   }
+  }
+  &.alert-success {
+    color: darken(@success, 20%);
+    border-left: 10px solid darken(@success, 10%);
+    background-color: lighten(@success, 58%);
+    .alert-link {
+      color: darken(@success, 30%);
+      &:before {
+        background-color: darken(@success, 30%);
+      }
+      &:focus {
+        outline: 2px dashed darken(@success, 30%);
+      }
+   }
+  }
+  &.alert-danger {
+    color: darken(@danger, 20%);
+    border-left: 10px solid darken(@danger, 20%);
+    background-color: lighten(@danger, 40%);
+    .alert-link {
+      color: darken(@danger, 30%);
+      &:before {
+        background-color: darken(@danger, 30%);
+      }
+      &:focus {
+        outline: 2px dashed darken(@danger, 30%);
+      }
+   }
+  }
+  &.alert-warning {
+    color: darken(@warning, 50%);
+    border-left: 10px solid darken(@warning, 40%);
+    background-color: lighten(@warning, 15%);
+    .alert-link {
+      color: darken(@warning, 60%);
+       &:before {
+         background-color:darken(@warning, 60%);
+       }
+       &:focus {
+        outline: 2px dashed darken(@warning, 60%);
+      }
+     }
+  }
+  &.alert-info{
+    color: darken(@info, 20%);
+    border-left: 10px solid darken(@info,20%);
+    background-color: lighten(@info, 47%);
+    .alert-link {
+      color: darken(@info, 20%);
+       &:before {
+         background-color:darken(@info, 20%);
+       }
+      &:focus {
+        outline: 2px dashed darken(@info, 20%);
+      }
+     }
+  }
+  &.alert-light {
+    color: darken(@secondary, 10%);
+    border-left: 10px solid darken(@secondary, 2%);
+
+    .alert-link {
+     color: darken(@secondary, 2%);
+      &:before {
+        background-color:darken(@secondary, 2%);
+      }
+      &:focus {
+        outline: 2px dashed darken(@secondary, 2%);
+      }
+    }
+  }
+  &.alert-dark {
+    color: white;
+    border-left: 10px solid lighten(@dark, 40%);
+    background-color: lighten(@dark, 20%);
+
+    .alert-link {
+      color: white;
+      &:before {
+        background-color: white;
+      }
+      &:focus {
+        outline: 2px dashed white;
+      }
+    }
+  }
 }
 
 /*backgrounds*/
