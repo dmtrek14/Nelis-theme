@@ -5,24 +5,29 @@
 @header-text-base: #3d4551;
 @link-base: #345d96;
 @accent-cool-base: #86b98e;
-@accent-warm-base: #ffbe2e;
-@secondary-warm: #c7a97b;
+@accent-warm-base: #ffca56;
+@secondary-warm: #b0aaa6;
 
 @divider-base: #e6e6e6;
 
 @main-hover: lighten(@main, 20%);
 @accent-cool-base-hover: darken(@accent-cool-base, 20%);
-@accent-warm-base-hover: darken(@accent-warm-base, 20%);
+@accent-warm-base-hover: darken(@accent-warm-base, 30%);
 @secondary-warm-hover: darken(@secondary-warm, 20%);
 
 @active-text-breadcrumb: #565c65;
 /*Bootstrap overrides*/
-@primary : #005ea2;
+@primary : #2672de;
 @primary-hover: darken(@primary, 10%);
-@info: #168092;
+@info: #3a7d95;
 @info-hover: darken(@info, 10%);
 @success: #208738;
 @success-hover: darken(@success, 10%);
+@warning: #fee685;
+@warning-hover: darken(@warning, 10%);
+@danger: #cd425b;
+@danger-hover: darken(@danger, 10%);
+@light-outline: #adadad;
 
 
 /************************/
@@ -189,6 +194,44 @@ a {
     background-color: @success-hover;
   }
  }
+ &-warning {
+   background-color: @warning;
+   border-color: @warning;
+   &:hover{
+     background-color: @warning-hover;;
+   }
+ }
+ &-outline-warning{
+  border-color: darken(@warning, 50%);
+  background-color: white;
+  color: darken(@warning, 50%);
+  &:hover{
+    background-color: @warning-hover;
+  }
+ }
+ &-outline-light{
+  border-color: darken(@light-outline, 30%);
+  background-color: white;
+  color: darken(@light-outline, 30%);
+  &:hover{
+    background-color: @light-outline;
+  }
+ }
+ &-danger {
+  background-color: @danger;
+  border-color: @danger;
+  &:hover {
+    background-color: @danger-hover;
+  }
+ }
+ &-outline-danger{
+  border-color: @danger;
+  background-color: white;
+  color: @danger;
+  &:hover{
+    background-color: @danger-hover;
+  }
+ }
  &-link {
    color: @link-base;
  }
@@ -224,7 +267,43 @@ a {
    }
  }
 }
+/*Badges and badge pills*/
+.badge {
+  &-primary{
+    background-color: @primary;
+   }
+  &-info{
+    background-color: @info;
+  }
+  &-success{
+    background-color: @success;
+  }
+  &-warning {
+    background-color: @warning;
+  }
+  &-danger {
+    background-color: @danger;
+  }
+  &-accent-cool{
+    background-color: @accent-cool-base;
+    color: black;
+  }
+  &-accent-warm{
+    background-color: @accent-warm-base;
+    color: black;
+  }
+  &-secondary-warm{
+    background-color: @secondary-warm;
+    color: black;
+  }
+}
 
+/*ALerts*/
+.alert {
+  
+}
+
+/*backgrounds*/
 .bg-accent-cool {
   background-color: @accent-cool-base !important;
   color: black;
@@ -237,6 +316,9 @@ a {
   background-color: @secondary-warm !important;
   color: black;
 }
+
+
+
 
 /**/
 .square {

@@ -103,25 +103,25 @@ a:hover {
   box-shadow: 0 10px 40px 0 rgba(62, 57, 107, 0.07), 0 2px 9px 0 rgba(62, 57, 107, 0.06);
 }
 .card-border-top.accent-warm {
-  border-top: 2px solid #ffbe2e;
+  border-top: 2px solid #ffca56;
 }
 .card-border-top.accent-cool {
   border-top: 2px solid #86b98e;
 }
 .card-border-bottom.accent-warm {
-  border-bottom: 2px solid #ffbe2e;
+  border-bottom: 2px solid #ffca56;
 }
 .card-border-bottom.accent-cool {
   border-bottom: 2px solid #86b98e;
 }
 .card-border-right.accent-warm {
-  border-right: 2px solid #ffbe2e;
+  border-right: 2px solid #ffca56;
 }
 .card-border-right.accent-cool {
   border-right: 2px solid #86b98e;
 }
 .card-border-left.accent-warm {
-  border-left: 2px solid #ffbe2e;
+  border-left: 2px solid #ffca56;
 }
 .card-border-left.accent-cool {
   border-left: 2px solid #86b98e;
@@ -141,34 +141,34 @@ a:hover {
 }
 /******* BUTTONS ***********/
 .btn-primary {
-  background-color: #005ea2;
-  border-color: #005ea2;
+  background-color: #2672de;
+  border-color: #2672de;
 }
 .btn-primary:hover {
-  background-color: #00406f;
+  background-color: #1c5bb5;
 }
 .btn-outline-primary {
-  border-color: #005ea2;
+  border-color: #2672de;
   background-color: white;
-  color: #005ea2;
+  color: #2672de;
 }
 .btn-outline-primary:hover {
-  background-color: #00406f;
+  background-color: #1c5bb5;
 }
 .btn-info {
-  background-color: #168092;
-  border-color: #168092;
+  background-color: #3a7d95;
+  border-color: #3a7d95;
 }
 .btn-info:hover {
-  background-color: #0f5966;
+  background-color: #2c5e70;
 }
 .btn-outline-info {
-  border-color: #168092;
+  border-color: #3a7d95;
   background-color: white;
-  color: #168092;
+  color: #3a7d95;
 }
 .btn-outline-info:hover {
-  background-color: #0f5966;
+  background-color: #2c5e70;
 }
 .btn-success {
   background-color: #208738;
@@ -185,6 +185,44 @@ a:hover {
 .btn-outline-success:hover {
   background-color: #165e27;
 }
+.btn-warning {
+  background-color: #fee685;
+  border-color: #fee685;
+}
+.btn-warning:hover {
+  background-color: #fedc52;
+}
+.btn-outline-warning {
+  border-color: #836901;
+  background-color: white;
+  color: #836901;
+}
+.btn-outline-warning:hover {
+  background-color: #fedc52;
+}
+.btn-outline-light {
+  border-color: #616161;
+  background-color: white;
+  color: #616161;
+}
+.btn-outline-light:hover {
+  background-color: #adadad;
+}
+.btn-danger {
+  background-color: #cd425b;
+  border-color: #cd425b;
+}
+.btn-danger:hover {
+  background-color: #ae2e45;
+}
+.btn-outline-danger {
+  border-color: #cd425b;
+  background-color: white;
+  color: #cd425b;
+}
+.btn-outline-danger:hover {
+  background-color: #ae2e45;
+}
 .btn-link {
   color: #345d96;
 }
@@ -199,35 +237,65 @@ a:hover {
   color: white;
 }
 .btn-accent-warm {
-  background-color: #ffbe2e;
-  border-color: #ffbe2e;
+  background-color: #ffca56;
+  border-color: #ffca56;
   color: black;
 }
 .btn-accent-warm:hover {
-  background-color: #c78900;
+  background-color: #bc8100;
   color: white;
-  border-color: #c78900;
+  border-color: #bc8100;
 }
 .btn-secondary-warm {
-  background-color: #c7a97b;
-  border-color: #c7a97b;
+  background-color: #b0aaa6;
+  border-color: #b0aaa6;
   color: black;
 }
 .btn-secondary-warm:hover {
-  background-color: #9a7742;
-  border-color: #9a7742;
+  background-color: #7f7771;
+  border-color: #7f7771;
   color: white;
 }
+/*Badges and badge pills*/
+.badge-primary {
+  background-color: #2672de;
+}
+.badge-info {
+  background-color: #3a7d95;
+}
+.badge-success {
+  background-color: #208738;
+}
+.badge-warning {
+  background-color: #fee685;
+}
+.badge-danger {
+  background-color: #cd425b;
+}
+.badge-accent-cool {
+  background-color: #86b98e;
+  color: black;
+}
+.badge-accent-warm {
+  background-color: #ffca56;
+  color: black;
+}
+.badge-secondary-warm {
+  background-color: #b0aaa6;
+  color: black;
+}
+/*ALerts*/
+/*backgrounds*/
 .bg-accent-cool {
   background-color: #86b98e !important;
   color: black;
 }
 .bg-accent-warm {
-  background-color: #ffbe2e !important;
+  background-color: #ffca56 !important;
   color: black;
 }
 .bg-secondary-warm {
-  background-color: #c7a97b !important;
+  background-color: #b0aaa6 !important;
   color: black;
 }
 /**/
