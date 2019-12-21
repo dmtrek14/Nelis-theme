@@ -168,7 +168,7 @@
 }
 .alert.alert-danger {
   color: #862335;
-  border-left: 10px solid #862335;
+  border-left: 10px solid #ae2e45;
   background-color: #f8e3e7;
 }
 .alert.alert-danger .alert-link {
