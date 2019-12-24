@@ -503,6 +503,11 @@
 body {
   font-family: 'Open Sans', sans-serif;
 }
+@media (max-width: 768px) {
+  main {
+    margin-top: 89px;
+  }
+}
 h1,
 h2,
 h3,
@@ -543,11 +548,25 @@ a:hover:before {
 a:focus {
   outline: 2px dashed #345d96;
 }
+#mainMenu .navbar-toggler {
+  border-color: transparent;
+  color: #fcfcfc;
+}
+.nelis-header-logo {
+  font-size: 2rem;
+  font-family: berlin-sans;
+  text-decoration: none !important;
+  border-bottom: none !important;
+  font-weight: normal !important;
+}
+.header-divider {
+  border-top: 1px solid #fcfcfc;
+}
 .navbar {
   font-family: 'Roboto', sans-serif;
 }
 .navbar.navbar-dark .navbar-nav .nav-link {
-  color: white;
+  color: #fcfcfc;
 }
 .navbar.nelis-menu {
   padding-top: 0;
@@ -601,6 +620,16 @@ a:focus {
 .navbar.nelis-menu #nelisMain.navbar-collapse .navbar-nav .nav-item .dropdown-menudiv[class*="col"] {
   margin-bottom: 1rem;
 }
+@media (max-width: 768px) {
+  .navbar.nelis-menu #nelisMain.navbar-collapse {
+    margin-top: 89px;
+  }
+}
+@media (min-width: 992px) {
+  .main-content {
+    border-left: 1px solid #e0dedc;
+  }
+}
 .footer {
   font-family: 'Roboto', sans-serif;
 }
@@ -618,7 +647,7 @@ a:focus {
   }
 }
 .footer address {
-  line-height: 2;
+  line-height: 2.5;
   color: white;
   font-weight: 700;
 }

@@ -24,6 +24,8 @@ function changeMenuClassesForMobile() {
 
 window.onresize = changeMenuClassesForMobile;
 
+
+
 //Shrinking sticky menu
 $(window).scroll(function () {
     /* affix after scrolling 100px */
