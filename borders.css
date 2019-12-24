@@ -1,6 +1,9 @@
 /******* COLORS ***********/
 /*Bootstrap overrides*/
 /************************/
+.square {
+  border-radius: 0;
+}
 .border-main {
   border: 2px solid #30415b;
 }

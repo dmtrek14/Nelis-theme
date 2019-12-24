@@ -273,6 +273,9 @@
 .card .card-footer-border-top {
   border-top: 1px solid #e6e6e6;
 }
+.square {
+  border-radius: 0;
+}
 .border-main {
   border: 2px solid #30415b;
 }
@@ -526,7 +529,58 @@ a:hover:before {
 a:focus {
   outline: 2px dashed #345d96;
 }
-/**/
-.square {
+.navbar.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+.navbar.nelis-menu {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.navbar.nelis-menu.navbar-light ul li.active a {
+  border-bottom: 3px solid #86b98e;
+  background: #DCDEE0;
+}
+.navbar.nelis-menu.navbar-without-dd-arrow .dropdown-toggle::after {
+  display: none;
+}
+.navbar.nelis-menu.shrink {
+  height: 48px;
+  font-size: 0.9em;
+  transition: all 0.2s ease;
+}
+.navbar.nelis-menu.shrink #nelisMain.navbar-collapse .navbar-nav .nav-item .nav-link {
+  padding: 0.75rem 0.6rem;
+}
+.navbar.nelis-menu #nelisMain.navbar-collapse .navbar-nav .nav-item.dropdown {
+  position: static;
+}
+.navbar.nelis-menu #nelisMain.navbar-collapse .navbar-nav .nav-item .nav-link {
+  padding: 1rem 0.6rem;
+}
+.navbar.nelis-menu #nelisMain.navbar-collapse .navbar-nav .nav-item .nav-link:before {
+  height: 3px;
+  bottom: -3px;
+  background-color: #86b98e;
+}
+.navbar.nelis-menu #nelisMain.navbar-collapse .navbar-nav .nav-item .dropdown-menu {
+  border-bottom: 1px solid #e6e6e6;
   border-radius: 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  transition: visibility 0s, opacity 0.3s linear;
+}
+.navbar.nelis-menu #nelisMain.navbar-collapse .navbar-nav .nav-item .dropdown-menu .nav.flex-column .nav-link {
+  padding: 0.4rem 0.4rem;
+}
+.navbar.nelis-menu #nelisMain.navbar-collapse .navbar-nav .nav-item .dropdown-menu .nav.flex-column .nav-link:before {
+  height: 0px;
+  bottom: -1px;
+  background-color: transparent;
+}
+.navbar.nelis-menu #nelisMain.navbar-collapse .navbar-nav .nav-item .dropdown-menu .nav.flex-column a.nav-link:hover {
+  text-decoration: underline;
+  color: #345d96;
+}
+.navbar.nelis-menu #nelisMain.navbar-collapse .navbar-nav .nav-item .dropdown-menudiv[class*="col"] {
+  margin-bottom: 1rem;
 }
