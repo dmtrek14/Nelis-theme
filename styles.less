@@ -66,7 +66,6 @@ a {
 
 
 .navbar {
-  //font-family: 'Roboto Condensed', sans-serif; //TODO: think on this one
   font-family: 'Roboto', sans-serif;
 
   &.navbar-dark {
@@ -83,11 +82,11 @@ a {
 
     &.navbar-light {
       ul {
-        li.active {
-          a {
-            border-bottom: 3px solid @accent-cool-base;
-            background: #DCDEE0;
-          }
+        li.active>a {
+
+          border-bottom: 3px solid @accent-cool-base;
+          background: lighten(@secondary-warm, 20%);
+
         }
       }
     }
@@ -116,7 +115,6 @@ a {
 
     #nelisMain.navbar-collapse {
       .navbar-nav {
-
         .nav-item {
           &.dropdown {
             position: static;

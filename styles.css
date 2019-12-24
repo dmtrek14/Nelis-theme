@@ -553,9 +553,9 @@ a:focus {
   padding-top: 0;
   padding-bottom: 0;
 }
-.navbar.nelis-menu.navbar-light ul li.active a {
+.navbar.nelis-menu.navbar-light ul li.active > a {
   border-bottom: 3px solid #86b98e;
-  background: #DCDEE0;
+  background: #e0dedc;
 }
 .navbar.nelis-menu.navbar-without-dd-arrow .dropdown-toggle::after {
   display: none;
