@@ -473,6 +473,20 @@
   src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN7rgOUuhs.ttf) format('truetype');
 }
 @font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fBBc9.ttf) format('truetype');
+}
+@font-face {
   font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: 400;
@@ -529,6 +543,9 @@ a:hover:before {
 a:focus {
   outline: 2px dashed #345d96;
 }
+.navbar {
+  font-family: 'Roboto', sans-serif;
+}
 .navbar.navbar-dark .navbar-nav .nav-link {
   color: white;
 }
@@ -583,4 +600,33 @@ a:focus {
 }
 .navbar.nelis-menu #nelisMain.navbar-collapse .navbar-nav .nav-item .dropdown-menudiv[class*="col"] {
   margin-bottom: 1rem;
+}
+.footer {
+  font-family: 'Roboto', sans-serif;
+}
+@media (min-width: 992px) {
+  .footer .row [class*='col-']:not(:last-child):after {
+    background: #e0e0e0;
+    width: 1px;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    min-height: 70px;
+  }
+}
+.footer address {
+  line-height: 2;
+  color: white;
+  font-weight: 700;
+}
+@media (min-width: 992px) {
+  .footer .list-unstyled {
+    padding-left: 2rem;
+  }
+}
+.footer .list-unstyled li {
+  padding-top: 1rem;
 }

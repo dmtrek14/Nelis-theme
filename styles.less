@@ -7,7 +7,12 @@
 @import "borders.less";
 @import "backgrounds.less";
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700|Roboto+Condensed:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700|Roboto+Condensed:400,700|Roboto:400,500&display=swap');
+
+@screen-xsmall: 480px;
+@screen-small: 768px;
+@screen-medium: 992px;
+@screen-large: 1200px;
 
 body {
   font-family: 'Open Sans', sans-serif
@@ -61,6 +66,9 @@ a {
 
 
 .navbar {
+  //font-family: 'Roboto Condensed', sans-serif; //TODO: think on this one
+  font-family: 'Roboto', sans-serif;
+
   &.navbar-dark {
     .navbar-nav {
       .nav-link {
@@ -160,5 +168,39 @@ a {
       }
     }
 
+  }
+}
+
+.footer {
+  font-family: 'Roboto', sans-serif;
+
+  @media (min-width:@screen-medium) {
+    .row [class*='col-']:not(:last-child):after {
+      background: #e0e0e0;
+      width: 1px;
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      min-height: 70px;
+    }
+  }
+
+  address {
+    line-height: 2;
+    color: white;
+    font-weight: 700;
+  }
+
+  .list-unstyled {
+    @media (min-width:@screen-medium) {
+      padding-left: 2rem;
+    }
+
+    li {
+      padding-top: 1rem;
+    }
   }
 }

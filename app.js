@@ -1,7 +1,7 @@
 //okay, if the viewport is a certain size or smaller, we need to add/remove classes to the menu so that it changes to be a vertical nav that will get overlayed
 var mqMedium = 768;
 var mqLarge = 992;
-var mainMenu = document.getElementById('main-menu');
+var mainMenu = document.getElementById('mainMenu');
 var nelisMenu = document.getElementById('nelisMenu');
 
 if (window.innerWidth < mqMedium) {
