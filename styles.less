@@ -71,26 +71,86 @@ a {
 }
 
 #mainMenu {
+  header {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+
+    .nelis-header-logo {
+      font-size: 2rem;
+      font-family: berlin-sans;
+      text-decoration: none !important;
+      border-bottom: none !important;
+      font-weight: normal !important;
+    }
+
+    .header-divider {
+      border-top: 1px solid @text-on-main-bg;
+    }
+
+    .dropdown-menu {
+      z-index: 1040 !important;
+      border-bottom: 1px solid @divider-base;
+      border-radius: 0;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      position: static;
+      width: 100%;
+      transition: visibility 0s, opacity 0.3s linear;
+
+      &.nvleg {
+        @media(min-width:@screen-small) {
+          width: 315%;
+        }
+
+        @media(min-width:@screen-medium) {
+          width: 305%;
+        }
+      }
+
+
+      a {
+        color: rgba(0, 0, 0, 0.5);
+      }
+
+      .nav.flex-column {
+        .nav-link {
+          padding: 0.4rem 0.4rem;
+
+          &:before {
+            height: 0px;
+            bottom: -1px;
+            background-color: transparent;
+          }
+        }
+
+        a.nav-link {
+          &:hover {
+            text-decoration: underline;
+            color: @link-base;
+          }
+        }
+      }
+
+      &div[class*="col"] {
+        margin-bottom: 1rem;
+      }
+
+    }
+
+  }
+
   .navbar-toggler {
     border-color: transparent;
     color: @text-on-main-bg;
   }
+
+
 }
 
-.nelis-header-logo {
-  font-size: 2rem;
-  font-family: berlin-sans;
-  text-decoration: none !important;
-  border-bottom: none !important;
-  font-weight: normal !important;
-}
 
-.header-divider {
-  border-top: 1px solid @text-on-main-bg;
-}
 
 .navbar {
   font-family: 'Roboto', sans-serif;
+
 
   &.navbar-dark {
     .navbar-nav {
@@ -103,6 +163,20 @@ a {
   &.nelis-menu {
     padding-top: 0;
     padding-bottom: 0;
+
+    .nav-overlay {
+      height: 100vh;
+      width: 70%;
+      position: fixed;
+      top: 87px;
+      left: 0;
+      overflow-y: scroll;
+      transition: .15s linear;
+      z-index: 2500;
+      opacity: 1;
+      background-color: @background-base;
+
+    }
 
     &.navbar-light {
       ul {
@@ -190,13 +264,29 @@ a {
       }
 
       @media (max-width:@screen-small) {
-        margin-top: 89px;
+        // margin-top: 89px;
       }
     }
 
   }
 }
 
+// .overlay {
+//   position: fixed;
+//   // display: none;
+//   top: 87px;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   cursor: pointer;
+//   background-color: #888;
+//   opacity: 0.8;
+//   z-index: 1500;
+
+//   &.invisible {
+//     display: none;
+//   }
+// }
 
 .main-content {
   @media (min-width:@screen-medium) {

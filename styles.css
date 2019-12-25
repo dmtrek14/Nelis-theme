@@ -548,19 +548,60 @@ a:hover:before {
 a:focus {
   outline: 2px dashed #345d96;
 }
-#mainMenu .navbar-toggler {
-  border-color: transparent;
-  color: #fcfcfc;
+#mainMenu header {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
 }
-.nelis-header-logo {
+#mainMenu header .nelis-header-logo {
   font-size: 2rem;
   font-family: berlin-sans;
   text-decoration: none !important;
   border-bottom: none !important;
   font-weight: normal !important;
 }
-.header-divider {
+#mainMenu header .header-divider {
   border-top: 1px solid #fcfcfc;
+}
+#mainMenu header .dropdown-menu {
+  z-index: 1040 !important;
+  border-bottom: 1px solid #e6e6e6;
+  border-radius: 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  position: static;
+  width: 100%;
+  transition: visibility 0s, opacity 0.3s linear;
+}
+@media (min-width: 768px) {
+  #mainMenu header .dropdown-menu.nvleg {
+    width: 315%;
+  }
+}
+@media (min-width: 992px) {
+  #mainMenu header .dropdown-menu.nvleg {
+    width: 305%;
+  }
+}
+#mainMenu header .dropdown-menu a {
+  color: rgba(0, 0, 0, 0.5);
+}
+#mainMenu header .dropdown-menu .nav.flex-column .nav-link {
+  padding: 0.4rem 0.4rem;
+}
+#mainMenu header .dropdown-menu .nav.flex-column .nav-link:before {
+  height: 0px;
+  bottom: -1px;
+  background-color: transparent;
+}
+#mainMenu header .dropdown-menu .nav.flex-column a.nav-link:hover {
+  text-decoration: underline;
+  color: #345d96;
+}
+#mainMenu header .dropdown-menudiv[class*="col"] {
+  margin-bottom: 1rem;
+}
+#mainMenu .navbar-toggler {
+  border-color: transparent;
+  color: #fcfcfc;
 }
 .navbar {
   font-family: 'Roboto', sans-serif;
@@ -571,6 +612,18 @@ a:focus {
 .navbar.nelis-menu {
   padding-top: 0;
   padding-bottom: 0;
+}
+.navbar.nelis-menu .nav-overlay {
+  height: 100vh;
+  width: 70%;
+  position: fixed;
+  top: 87px;
+  left: 0;
+  overflow-y: scroll;
+  transition: 0.15s linear;
+  z-index: 2500;
+  opacity: 1;
+  background-color: #fbfcfd;
 }
 .navbar.nelis-menu.navbar-light ul li.active > a {
   border-bottom: 3px solid #86b98e;
@@ -621,9 +674,6 @@ a:focus {
   margin-bottom: 1rem;
 }
 @media (max-width: 768px) {
-  .navbar.nelis-menu #nelisMain.navbar-collapse {
-    margin-top: 89px;
-  }
 }
 @media (min-width: 992px) {
   .main-content {
