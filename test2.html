@@ -14,7 +14,7 @@
     <script src="https://kit.fontawesome.com/d174097705.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="bg-complement">
+<body class="bg-complement bootstrap-fs-modal">
     <!-- <div id="mainMenu" class="container-fluid px-0">
         <header class="nelis-header bg-main navbar-dark py-1">
             <div class="row flex-no-wrap justify-content-between align-items-center mx-0 px-1">
@@ -620,9 +620,21 @@
                         </div>
                     </div>
                 </div>
+                <div class="row mt-5">
+                    <div class="col">
+                        <h2>Modals</h2>
+                        <hr class="my-2">
+                    </div>
+                    <div class="col-12 mt-3 mb-5">
+                        <button type="button" class="btn btn-primary square" data-toggle="modal"
+                            data-target="#exampleModal">
+                            Launch demo modal
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- <div class="overlay invisible"></div> -->
+
     </main>
 
     <footer class="footer bg-main">
@@ -688,6 +700,28 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
     <script src="app.js"></script>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    This is a modal.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary square" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary square">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
