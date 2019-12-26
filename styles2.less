@@ -109,18 +109,34 @@ a {
         padding-bottom: 0;
 
         .nav-overlay {
-            height: 100vh;
-            width: 70%;
-            position: fixed;
-            top: 64px;
-            left: 0;
-            overflow-y: scroll;
-            transition: .15s linear;
-            z-index: 2500;
-            opacity: 1;
-            background-color: @background-base;
+            visibility: hidden;
+            transition: visibility 0s 0.2s;
 
+            &.collapse {
+                transition: none !important;
+            }
+
+            &.collapsing {
+                height: 0 !important;
+            }
+
+            &.show {
+                visibility: visible;
+                transition: visibility 0s 0s;
+                height: 100vh;
+                width: 70%;
+                position: fixed;
+                top: 64px;
+                left: 0;
+                overflow-y: scroll;
+
+                transition: transform 0.2s 0.2s;
+                z-index: 2500;
+                opacity: 1;
+                background-color: @background-base;
+            }
         }
+
 
         &.navbar-light {
             ul {

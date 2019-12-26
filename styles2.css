@@ -570,13 +570,25 @@ a:focus {
   padding-bottom: 0;
 }
 .navbar.nelis-menu .nav-overlay {
+  visibility: hidden;
+  transition: visibility 0s 0.2s;
+}
+.navbar.nelis-menu .nav-overlay.collapse {
+  transition: none !important;
+}
+.navbar.nelis-menu .nav-overlay.collapsing {
+  height: 0 !important;
+}
+.navbar.nelis-menu .nav-overlay.show {
+  visibility: visible;
+  transition: visibility 0s 0s;
   height: 100vh;
   width: 70%;
   position: fixed;
   top: 64px;
   left: 0;
   overflow-y: scroll;
-  transition: 0.15s linear;
+  transition: transform 0.2s 0.2s;
   z-index: 2500;
   opacity: 1;
   background-color: #fbfcfd;
