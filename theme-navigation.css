@@ -103,7 +103,7 @@ header .nelis-header .navbar-container #navbar-mobile .nav-item.dropdown .dropdo
   color: rgba(0, 0, 0, 0.5);
 }
 header .nelis-header .navbar-container #navbar-mobile .nav-item.dropdown .dropdown-menu.nvleg {
-  width: 95vw;
+  width: 90vw;
 }
 header .nelis-header .navbar-container #navbar-mobile .nav-item.dropdown .dropdown-menu .nav.flex-column .nav-link {
   padding: 0.4rem 0.4rem;

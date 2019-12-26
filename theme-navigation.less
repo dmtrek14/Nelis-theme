@@ -1,5 +1,5 @@
-@import "colors.less";
-@import "variables.less";
+@import "theme-colors.less";
+@import "theme-variables.less";
 
 /******Breadcrumbs*******/
 .breadcrumb {
@@ -113,13 +113,10 @@ header {
           z-index: 1040;
 
           .dropdown-menu {
-            // z-index: 1040 !important;
             border-bottom: 1px solid @divider-base;
             border-radius: 0;
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
             position: absolute;
-            // width: 100%;
-            //min-width: 20rem;
             transition: visibility 0s, opacity 0.3s linear;
 
             a {
@@ -127,16 +124,8 @@ header {
             }
 
             &.nvleg {
-              width: 95vw;
-              // @media(min-width:@screen-small) {
-              //     // width: 425%;
-              //     width: 95vw;
-              // }
+              width: 90vw;
 
-              // @media(min-width:@screen-medium) {
-              //     // width: 765%;
-              //     width: 95vw;
-              // }
             }
 
             .nav.flex-column {
