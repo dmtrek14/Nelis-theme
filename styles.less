@@ -185,6 +185,10 @@ a {
           border-bottom: 3px solid @accent-cool-base;
           background: lighten(@secondary-warm, 20%);
 
+          @media(max-width:@screen-medium) {
+            border-bottom: none;
+            border-left: 3px solid @accent-cool-base;
+          }
         }
       }
     }
@@ -287,6 +291,7 @@ a {
 //     display: none;
 //   }
 // }
+
 
 .main-content {
   @media (min-width:@screen-medium) {
