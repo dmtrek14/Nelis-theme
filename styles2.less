@@ -75,3 +75,16 @@ a {
     }
 
 }
+
+.drag-target {
+    height: 100%;
+    width: 40px;
+    position: fixed;
+    top: 0;
+    left: -10px;
+    z-index: 1036;
+
+    @media (min-width: 768px) {
+        z-index: 0;
+    }
+}

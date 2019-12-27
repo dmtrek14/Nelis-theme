@@ -39,4 +39,30 @@ $(function () {
         }
     });
 
+    if (typeof Hammer !== 'undefined') {
+        var swipeInElement = document.querySelector('.drag-target');
+        if ($(swipeInElement).length > 0) {
+            var swipeInMenu = new Hammer(swipeInElement);
+            swipeInMenu.on('swiperight', function (e) {
+                if (!$('.nav-overlay').hasClass('show')) {
+                    $('.nav-overlay').addClass('show');
+                }
+            });
+        }
+        setTimeout(function () {
+            var swipeOutElement = document.getElementById('nelisMain');
+            var swipeOutMenu;
+
+            if ($(swipeOutElement).length > 0) {
+                swipeOutMenu = new Hammer(swipeOutElement);
+
+                swipeOutMenu.on('swipeleft', function (e) {
+                    if ($('.nav-overlay').hasClass('show')) {
+                        $('.nav-overlay').removeClass('show');
+                    }
+                });
+            }
+        }, 300);
+    }
+
 });
