@@ -115,7 +115,7 @@ header .nelis-header .navbar-container #navbar-mobile .nav-item.dropdown .dropdo
   transition: visibility 0s, opacity 0.3s linear;
 }
 header .nelis-header .navbar-container #navbar-mobile .nav-item.dropdown .dropdown-menu a {
-  color: #71767a;
+  color: #565c65;
 }
 header .nelis-header .navbar-container #navbar-mobile .nav-item.dropdown .dropdown-menu.nvleg {
   width: 90vw;
@@ -154,7 +154,7 @@ header .header-divider .dropdown .dropdown-menu {
   border-radius: 0;
 }
 header .header-divider .dropdown .dropdown-menu a.dropdown-item {
-  color: #71767a;
+  color: #565c65;
 }
 header .header-divider .days-remaining {
   font-size: smaller;
@@ -225,11 +225,11 @@ header .header-divider .days-remaining {
   position: static;
 }
 .navbar.nelis-menu #nelisMain.navbar-collapse .navbar-nav .nav-item.active .nav-link {
-  color: #4c5052;
+  color: #33363c;
 }
 .navbar.nelis-menu #nelisMain.navbar-collapse .navbar-nav .nav-item .nav-link {
   padding: 1rem 0.6rem;
-  color: #71767a;
+  color: #565c65;
 }
 .navbar.nelis-menu #nelisMain.navbar-collapse .navbar-nav .nav-item .nav-link:before {
   height: 3px;
