@@ -334,7 +334,7 @@ header .nelis-header .navbar-container #navbar-mobile .nav-item.dropdown .dropdo
   transition: visibility 0s, opacity 0.3s linear;
 }
 header .nelis-header .navbar-container #navbar-mobile .nav-item.dropdown .dropdown-menu a {
-  color: rgba(0, 0, 0, 0.5);
+  color: #71767a;
 }
 header .nelis-header .navbar-container #navbar-mobile .nav-item.dropdown .dropdown-menu.nvleg {
   width: 90vw;
@@ -370,7 +370,7 @@ header .header-divider .dropdown-menu {
   border-radius: 0;
 }
 header .header-divider .dropdown-menu a.dropdown-item {
-  color: rgba(0, 0, 0, 0.5) !important;
+  color: #71767a;
 }
 /***********NELIS menu items*************/
 .navbar {
@@ -436,8 +436,12 @@ header .header-divider .dropdown-menu a.dropdown-item {
 .navbar.nelis-menu #nelisMain.navbar-collapse .navbar-nav .nav-item.dropdown {
   position: static;
 }
+.navbar.nelis-menu #nelisMain.navbar-collapse .navbar-nav .nav-item.active .nav-link {
+  color: #4c5052;
+}
 .navbar.nelis-menu #nelisMain.navbar-collapse .navbar-nav .nav-item .nav-link {
   padding: 1rem 0.6rem;
+  color: #71767a;
 }
 .navbar.nelis-menu #nelisMain.navbar-collapse .navbar-nav .nav-item .nav-link:before {
   height: 3px;

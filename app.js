@@ -3,6 +3,7 @@ var mqMedium = 768;
 var mainMenu = document.getElementById('mainMenu');
 var nelisMenu = document.getElementById('nelisMenu');
 var nelisMenuContents = document.getElementById('nelisMain');
+//var buttonGroup = document.querySelector('.btn-group');
 
 var ready = (callback) => {
     if (document.readyState != "loading") callback();
@@ -13,13 +14,12 @@ if (window.innerWidth < mqMedium) {
     mainMenu.classList.add('fixed-top');
     nelisMenu.classList.remove('sticky-top');
     nelisMenuContents.classList.add('nav-overlay');
-
+    //buttonGroup.classList.replace('btn-group', 'btn-group-vertical');
 } else if (window.innerWidth >= mqMedium) {
     mainMenu.classList.remove('fixed-top');
     nelisMenu.classList.add('sticky-top');
     nelisMenuContents.classList.remove('nav-overlay')
-
-
+    //buttonGroup.classList.replace('btn-group-vertical', 'btn-group');
 };
 
 
