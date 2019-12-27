@@ -49,6 +49,17 @@ $(function () {
                 }
             });
         }
+        //TODO: not working...figure out why
+        // var tapCloseElement = document.querySelector('.container-fluid');
+        // if ($(tapCloseElement).length > 0) {
+        //     var tapCloseMenu = new Hammer(tapCloseElement);
+        //     tapCloseMenu.on('tap', function (e) {
+        //         if ($('.nav-overlay').hasClass('show')) {
+        //             $('.nav-overlay').removeClass('show');
+        //         }
+        //     });
+        // }
+
         setTimeout(function () {
             var swipeOutElement = document.getElementById('nelisMain');
             var swipeOutMenu;
