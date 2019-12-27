@@ -305,6 +305,21 @@ header .nelis-header .navbar-header .nelis-header-logo {
   border-bottom: none !important;
   font-weight: normal !important;
 }
+header .nelis-header .navbar-header .dev-environment {
+  float: left;
+  position: absolute;
+  top: 0;
+  display: inline-flex;
+  left: 65%;
+}
+header .nelis-header .navbar-header .dev-environment .badge {
+  margin-right: 4px;
+}
+@media (max-width: 767.98px) {
+  header .nelis-header .navbar-header .dev-environment {
+    left: unset;
+  }
+}
 header .nelis-header .navbar-container {
   -webkit-transition: 300ms ease all;
   -o-transition: 300ms ease all;
@@ -365,12 +380,19 @@ header .nelis-header .navbar-container #navbar-mobile .nav-item.dropdown .dropdo
 header .header-divider {
   border-top: 1px solid #fcfcfc;
 }
-header .header-divider .dropdown-menu {
+header .header-divider .dropdown .dropdown-toggle {
+  font-weight: normal;
+}
+header .header-divider .dropdown .dropdown-menu {
   z-index: 1040;
   border-radius: 0;
 }
-header .header-divider .dropdown-menu a.dropdown-item {
+header .header-divider .dropdown .dropdown-menu a.dropdown-item {
   color: #71767a;
+}
+header .header-divider .days-remaining {
+  font-size: smaller;
+  font-weight: normal;
 }
 /***********NELIS menu items*************/
 .navbar {

@@ -84,6 +84,22 @@ header {
         border-bottom: none !important;
         font-weight: normal !important;
       }
+
+      .dev-environment {
+        float: left;
+        position: absolute;
+        top: 0;
+        display: inline-flex;
+        left: 65%;
+
+        .badge {
+          margin-right: 4px;
+        }
+
+        @media (max-width: 767.98px) {
+          left: unset;
+        }
+      }
     }
 
     .navbar-container {
@@ -165,15 +181,24 @@ header {
   .header-divider {
     border-top: 1px solid @text-on-main-bg;
 
-    .dropdown-menu {
-      z-index: 1040;
-      border-radius: 0;
-
-      a.dropdown-item {
-
-        color: @nav-text-base;
-
+    .dropdown {
+      .dropdown-toggle {
+        font-weight: normal;
       }
+
+      .dropdown-menu {
+        z-index: 1040;
+        border-radius: 0;
+
+        a.dropdown-item {
+          color: @nav-text-base;
+        }
+      }
+    }
+
+    .days-remaining {
+      font-size: smaller;
+      font-weight: normal;
     }
   }
 }
