@@ -945,7 +945,7 @@ a:focus {
   }
 }
 .drag-target {
-  height: 100%;
+  height: 100vh;
   width: 40px;
   position: fixed;
   top: 0;
@@ -954,6 +954,19 @@ a:focus {
 }
 @media (min-width: 768px) {
   .drag-target {
+    z-index: 0;
+  }
+}
+.tap-target {
+  height: 100vh;
+  width: 20vw;
+  position: fixed;
+  top: 64px;
+  right: -10px;
+  z-index: 1036;
+}
+@media (min-width: 768px) {
+  .tap-target {
     z-index: 0;
   }
 }
