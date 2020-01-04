@@ -19,7 +19,7 @@ $(function () {
             $nelisMenuContents.removeClass('nav-overlay');
 
             $(window).scroll(function () {
-                if ($(document).scrollTop() > 100) {
+                if ($(document).scrollTop() >= 100) {
                     $nelisMenu.addClass('shrink');
                 } else {
                     $nelisMenu.removeClass('shrink');

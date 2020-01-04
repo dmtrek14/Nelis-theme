@@ -4,163 +4,58 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shortcut icon" href="/images/favicon.ico">
-    <title>NELIS Bootstrap Theme</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Bootstrap theming - NELIS</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- <script src="https://use.fontawesome.com/b78a58163b.js"></script> -->
     <script src="https://kit.fontawesome.com/d174097705.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="bg-body bootstrap-fs-modal">
-    <header id="mainMenu">
-        <nav class="navbar navbar-expand-md nelis-header bg-main navbar-dark">
-            <div class="navbar-wrapper">
-                <div class="navbar-header">
-                    <ul class="nav navbar-nav flex-row">
-                        <button id="toggleNelisMain" class="navbar-toggler d-md-none mr-auto" type="button"
-                            data-toggle="collapse" data-target="#nelisMain" aria-controls="nelisMain"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
-                        </button>
-                        <li class="nav-item">
-                            <a class="navbar-brand align-middle" href="#">
-                                <span class="nelis-header-logo">NELIS</span>
-                            </a>
-                        </li>
-                        <li class="nav-item d-md-none"><button id="toggleNvLeg"
-                                class="nav-link open-navbar-container navbar-toggler" data-toggle="collapse"
-                                data-target="#navbar-mobile"><i class="fa fa-ellipsis-v fa-lg"></i></button></li>
-                    </ul>
-                    <div class="ml-2 dev-environment d-none d-md-inline-flex">
-                        <span class="badge badge-success"><i class="fas fa-database"></i> websqldev</span>
-                        <span class="badge badge-warning"><i class="fas fa-dungeon"></i> sql dependency disabled</span>
-                        <span class="badge badge-danger"><i class="fas fa-lock"></i> Test web service</span>
-                    </div>
-                </div>
-                <div class="navbar-container">
-                    <div class="collapse navbar-collapse" id="navbar-mobile">
-                        <ul class="nav navbar-nav mr-auto float-left">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" id="nvleg" href="#" data-toggle="dropdown"
-                                    data-offset="-50,5" aria-haspopup=" true" aria-expanded="false">Nevada
-                                    Legislature</a>
-                                <div class="dropdown-menu nvleg" aria-labelledby="nvleg">
-                                    <div class="container-fluid">
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <ul class="nav flex-column">
-                                                    <li class="nav-item">
-                                                        <a href="#" class="nav-link">Home</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="#">Session</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="#">Interim Committee</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="#">Meetings</a>
-                                                    </li>
+<body class="bg-complement">
+    <header>
+        <nav id="mainMenu" class="navbar navbar-expand-sm bg-main navbar-dark header-menu">
+            <button id="toggleNelisMain" class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#nelisMain" aria-controls="nelisMain" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+            </button>
+            <!-- <a class="navbar-brand" href="#">NELIS</a> -->
+            <div class="collapse navbar-collapse" id="nvlegMenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Nevada Legislature
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
 
-                                                </ul>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <ul class="nav flex-column">
-                                                    <li class="nav-item">
-                                                        <a href="#" class="nav-link">Senate</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="#">Assembly</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="#">BDR Forms</a>
-                                                    </li>
-                                                    <div class="dropdown-divider"></div>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="#">Bill Reports and Links</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="#"><i class="fa fa-search"
-                                                                aria-hidden="true"></i>
-                                                            Search Bills <i class="fa fa-external-link"
-                                                                aria-hidden="true"></i></a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <span class="font-weight-bold">Bill Draft Requests (BDRs)</span>
-                                                <ul class="nav flex-column">
-                                                    <li class="nav-item">
-                                                        <a href="#" class="nav-link">BDR List</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="#">BDR Fact Sheet</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="#">BDR Forms</a>
-                                                    </li>
-                                                    <div class="dropdown-divider"></div>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="#">Bill Reports and Links</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="#"><i class="fa fa-search"
-                                                                aria-hidden="true"></i>
-                                                            Search Bills <i class="fa fa-external-link"
-                                                                aria-hidden="true"></i></a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                        <ul class="nav navbar-nav float-right">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-right" href="#" id="navbarDropdown2"
-                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    User menu
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown2">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                </ul>
+                <a class="navbar-brand ml-auto" href="#">NELIS</a>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">User</a>
+                    </li>
+                </ul>
             </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nvlegMenu"
+                aria-controls="nvlegMenu" aria-expanded="false">
+                <i class="fa fa-ellipsis-v fa-lg" aria-hidden="true"></i>
+            </button>
         </nav>
-        <div
-            class="bg-main navbar-dark row flex-no-wrap justify-content-between align-items-center header-divider mx-0 p-1">
-            <div class="col-sm-12 col-md-6 d-flex flex-row">
-                <div class="dropdown">
-                    <a class="dropdown-toggle" id="session" href="#" data-toggle="dropdown" data-offset="30,0"
-                        aria-haspopup=" true" aria-expanded="false">Choose session</a>
-                    <div class="dropdown-menu" aria-labelledby="session">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </div>
-                <!-- <div class="ml-2 float-right dev-environment">
-                    <span class="badge badge-success">websqldev</span>
-                    <span class="badge badge-warning">sql dependency disabled</span>
-                    <span class="badge badge-danger">Test web service</span>
-                </div> -->
-            </div>
-            <div class="col-sm-12 col-md-6 text-right d-none d-md-block days-remaining">
-                Friday, December 27, 2019 - The 80th Session adjourned Sine Die on June 3, 2019
-            </div>
-        </div>
     </header>
+
     <nav id="nelisMenu"
         class="navbar navbar-light bg-complement navbar-expand-md sticky-top justify-content-between navbar-shadow navbar-without-dd-arrow nelis-menu">
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button> -->
         <div class="collapse navbar-collapse" id="nelisMain">
             <ul class="navbar-nav flex-sm-column flex-md-row mr-auto">
                 <li class="nav-item dropdown active">
@@ -273,19 +168,24 @@
                     </div>
                 </li>
             </ul>
+            <!-- <form class="form-inline my-2 my-lg-0">
+                <div class="input-group mb-3">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </div>
+                </div>
+            </form> -->
         </div>
     </nav>
     <main class="container-fluid">
         <div class="row">
             <div class="col-lg-3 pt-4">
-                <ul class="list-unstyled ml-lg-4">
-                    <li class="p-2"><a href="">Colors</a></li>
-                    <li class="p-2"><a href="cards.html">Cards</a></li>
-                    <li class="p-2"><a href="forms.html">Forms</a></li>
-                </ul>
+                <p>Sidebar - where treeview will go</p>
+                <p>On mobile, only show search above treeview</p>
             </div>
             <div class="col-lg-9 pt-4 main-content">
-                <h1>NELIS Bootstrap Theme</h1>
+                <h1>Bootstrap Theming - Nelis</h1>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -468,17 +368,6 @@
                         <button type="button" class="btn btn-light square">Light</button>
                         <button type="button" class="btn btn-dark square">Dark</button>
                     </div>
-                    <div class="col-12 mt-3">
-                        <h3>Button group - PLT Widgets</h3>
-                        <div class="btn-group btn-group-sm plt" role="group" aria-label="Basic example">
-                            <button type="button" class="btn btn-outline-dark"><i class="fas fa-bookmark"
-                                    aria-hidden="true"></i> Track</button>
-                            <button type="button" class="btn btn-outline-dark"><i class="fas fa-tags"
-                                    aria-hidden="true"></i> My Tags</button>
-                            <button type="button" class="btn btn-outline-dark"><i class="fas fa-sticky-note"
-                                    aria-hidden="true"></i> My Notes</button>
-                        </div>
-                    </div>
                 </div>
                 <div class="row mt-5">
                     <div class="col">
@@ -550,46 +439,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="row mt-5">
-                    <div class="col">
-                        <h2>Modals</h2>
-                        <hr class="my-2">
-                    </div>
-                    <div class="col-12 mt-3 mb-5">
-                        <button type="button" class="btn btn-primary square" data-toggle="modal"
-                            data-target="#exampleModal">
-                            Launch demo modal
-                        </button>
-                    </div>
-                </div>
-                <div class="row mt-5">
-                    <div class="col">
-                        <ul class="list-group list-group-horizontal-md">
-                            <li class="list-group-item">
-                                <div class="d-flex w-100">
-                                    <p class="h5">Heading</p>
-
-                                </div>
-                                <p>schedule text</p>
-                            </li>
-                            <li class="list-group-item">Dapibus ac facilisis in</li>
-                            <li class="list-group-item">Morbi leo risus</li>
-                        </ul>
-                    </div>
-                </div>
             </div>
         </div>
-
     </main>
-    <div class="drag-target"></div>
-    <div class="tap-target"></div>
+    <div class="overlay"></div>
     <footer class="footer bg-main">
         <div class="container-fluid p-3 p-md-5">
             <div class="row">
                 <div class="col-md">
                     <div class="media">
                         <img src="https://www.leg.state.nv.us/App/NELIS/REL/Images/lcb-seal.png"
-                            class="align-self-center mr-3 d-none d-lg-block" alt="Legislative Counsel Bureau Seal">
+                            class="align-self-center mr-3 d-none d-md-block" alt="Legislative Counsel Bureau Seal">
                         <div class="media-body">
                             <p>
                             </p>
@@ -645,37 +505,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
-    <!--here for testing touch functionality-->
-    <script src="/src/touchemulator.js"></script>
-    <script>
-        TouchEmulator();
-    </script>
-    <!--end testing script-->
-    <script src="/src/hammer.min.js"></script>
-    <script src="/src/jquery.hammer.js"></script>
-    <script src="/src/app.js"></script>
-
-
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    This is a modal.
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary square" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary square">Save changes</button>
-                </div>
-            </div>
-        </div>
-    </div>
+    <script src="app.js"></script>
 </body>
 
 </html>

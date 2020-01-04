@@ -1,0 +1,62 @@
+/******* COLORS ***********/
+/*Bootstrap overrides*/
+/************************/
+.list-group-item-primary {
+  color: #154589;
+  background-color: #e4eefb;
+}
+.list-group-item-success {
+  color: #0c3516;
+  background-color: #d9f6e0;
+}
+.list-group-item-danger {
+  color: #862335;
+  background-color: #f8e3e7;
+}
+.list-group-item-warning {
+  color: #836901;
+  background-color: #fff6d1;
+}
+.list-group-item-info {
+  color: #1d3f4c;
+  background-color: #d1e6ed;
+}
+.list-group-item-light {
+  color: #545b62;
+}
+.list-group-item-secondary-warm {
+  background-color: #b0aaa6 !important;
+  color: black;
+}
+.list-group-item-secondary-warm-lighten-10 {
+  background-color: #c8c4c1 !important;
+  color: black;
+}
+.list-group-item-secondary-warm-lighten-20 {
+  background-color: #e0dedc !important;
+  color: black;
+}
+.list-group-item-accent-warm {
+  background-color: #ffca56 !important;
+  color: black;
+}
+.list-group-item-accent-warm-lighten-10 {
+  background-color: #ffda89 !important;
+  color: black;
+}
+.list-group-item-accent-warm-lighten-20 {
+  background-color: #ffeabc !important;
+  color: black;
+}
+.list-group-item-accent-cool {
+  background-color: #86b98e !important;
+  color: black;
+}
+.list-group-item-accent-cool-lighten-10 {
+  background-color: #a6ccac !important;
+  color: black;
+}
+.list-group-item-accent-cool-lighten-20 {
+  background-color: #c7deca !important;
+  color: black;
+}
