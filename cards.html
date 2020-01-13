@@ -11,13 +11,6 @@
 
     <link rel="stylesheet" href="/styles/styles.css">
     <script src="https://kit.fontawesome.com/d174097705.js" crossorigin="anonymous"></script>
-    <style>
-        #chartdiv {
-          width: 100%;
-          height: 500px;
-        }
-        
-        </style>
 </head>
 
 <body class="bg-body bootstrap-fs-modal">
@@ -397,7 +390,7 @@
                                             <div class="text-center">
                                                 <span class="fa-layers fa-fw fa-4x text-danger">
                                                     <i class="fas fa-calendar"></i>
-                                                    <span class="fa-layers-text fa-inverse font-weight-bold" data-fa-transform="shrink-8 down-3">12</span>
+                                                    <span class="fa-layers-text fa-inverse font-weight-bold" data-fa-transform="shrink-11 down-3">4/12</span>
                                                 </span>
                                             </div>
                                         </div>
@@ -468,7 +461,7 @@
                                             <div class="text-center">
                                                 <span class="fa-layers fa-fw fa-4x text-success">
                                                     <i class="fas fa-calendar"></i>
-                                                    <span class="fa-layers-text fa-inverse font-weight-bold" data-fa-transform="shrink-10 down-3">10/1</span>
+                                                    <span class="fa-layers-text fa-inverse font-weight-bold" data-fa-transform="shrink-11 down-3">10/1</span>
                                                 </span>
                                             </div>
                                         </div>
@@ -512,7 +505,7 @@
                                             <div class="text-center">
                                                 <span class="fa-layers fa-fw fa-4x text-info">
                                                     <i class="fas fa-calendar"></i>
-                                                    <span class="fa-layers-text fa-inverse font-weight-bold" data-fa-transform="shrink-8 down-3">23</span>
+                                                    <span class="fa-layers-text fa-inverse font-weight-bold" data-fa-transform="shrink-11 down-3">4/23</span>
                                                 </span>
                                             </div>
                                         </div>
@@ -529,14 +522,7 @@
                                 </div> 
                             </div>
                         </div>
-                        <div class="card-deck mt-5">
-                            <div class="card">
-                                <div class="card-header font-weight-bold h4">Bill Totals (for previous session home)</div>
-                                <div class="card-body">
-                                    <div id="chartdiv"></div>
-                                </div>
-                            </div>
-                        </div>
+                       
                    </div>
                </div>
             </div>
@@ -618,74 +604,7 @@
     <script src="/src/app.js"></script>
 
 
-   
-<!-- Resources -->
-<script src="https://www.amcharts.com/lib/4/core.js"></script>
-<script src="https://www.amcharts.com/lib/4/charts.js"></script>
-<script src="https://www.amcharts.com/lib/4/themes/spiritedaway.js"></script>
-<script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
 
-<!-- Chart code -->
-<script>
-am4core.ready(function() {
-
-// Themes begin
-am4core.useTheme(am4themes_spiritedaway);
-am4core.useTheme(am4themes_animated);
-// Themes end
-
-var chart = am4core.create("chartdiv", am4charts.PieChart3D);
-chart.hiddenState.properties.opacity = 0; // this creates initial fade-in
-
-chart.legend = new am4charts.Legend();
-
-chart.data = [
-  {
-    documentType: "Assembly Bills",
-    count: 545
-  },
-  {
-    documentType: "Assembly Joint Resolutions",
-    count: 10
-  },
-  {
-    documentType: "Assembly Concurrent Resolutions",
-    count: 11
-  },
-  {
-    documentType: "Assembly Resolutions",
-    count: 7
-  },
-  {
-    documentType: "Previous Session Bills",
-    count: 22
-  },
-  {
-    documentType: "Senate Bills",
-    count: 557
-  },
-  {
-    documentType: "Senate Joint Resolutions",
-    count: 8
-  },
-  {
-    documentType: "Senate Concurrent Resolutions",
-    count: 11
-  },
-  {
-    documentType: "Senate Resolutions",
-    count: 8
-  }
-];
-
-chart.innerRadius = 100;
-
-var series = chart.series.push(new am4charts.PieSeries3D());
-series.dataFields.value = "count";
-series.dataFields.category = "documentType";
-
-}); // end am4core.ready()
-</script>
 </body>
 
 </html>
