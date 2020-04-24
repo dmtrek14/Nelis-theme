@@ -2,45 +2,45 @@
 /*Bootstrap overrides*/
 /************************/
 .text-primary {
-  color: #2672de !important;
+  color: #42597c !important;
 }
 .text-secondary {
-  color: #6c757d !important;
+  color: #565c65 !important;
 }
 .text-info {
-  color: #3a7d95 !important;
+  color: #b0aaa6 !important;
 }
 .text-danger {
-  color: #cd425b !important;
+  color: #8E1904 !important;
 }
 .text-success {
-  color: #208738 !important;
+  color: #86b98e !important;
 }
 .list-group.borderless .list-group-item {
   border-color: transparent;
 }
 .list-group-item-primary {
-  color: #154589;
-  background-color: #e4eefb;
+  color: #1e293a;
+  background-color: #bdc9dc;
 }
 .list-group-item-success {
-  color: #0c3516;
-  background-color: #d9f6e0;
+  color: #508959;
+  background-color: #ffffff;
 }
 .list-group-item-danger {
-  color: #862335;
-  background-color: #f8e3e7;
+  color: #2b0801;
+  background-color: #fb7a63;
 }
 .list-group-item-warning {
-  color: #836901;
-  background-color: #fff6d1;
+  color: #895e00;
+  background-color: #fff2d6;
 }
 .list-group-item-info {
-  color: #1d3f4c;
-  background-color: #d1e6ed;
+  color: #7f7771;
+  background-color: #ffffff;
 }
 .list-group-item-light {
-  color: #545b62;
+  color: #3f4349;
 }
 .list-group-item-secondary-warm {
   background-color: #b0aaa6 !important;

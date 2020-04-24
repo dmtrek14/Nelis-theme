@@ -2,38 +2,40 @@
 /*Bootstrap overrides*/
 /************************/
 .text-primary {
-  color: #2672de !important;
+  color: #42597c !important;
 }
 .text-secondary {
-  color: #6c757d !important;
+  color: #565c65 !important;
 }
 .text-info {
-  color: #3a7d95 !important;
+  color: #b0aaa6 !important;
 }
 .text-danger {
-  color: #cd425b !important;
+  color: #8E1904 !important;
 }
 .text-success {
-  color: #208738 !important;
+  color: #86b98e !important;
 }
 /*Badges and badge pills*/
 .badge {
   font-weight: 600;
 }
 .badge-primary {
-  background-color: #2672de;
+  background-color: #42597c;
 }
 .badge-info {
-  background-color: #3a7d95;
+  background-color: #b0aaa6;
+  color: black;
 }
 .badge-success {
-  background-color: #208738;
+  background-color: #86b98e;
+  color: black;
 }
 .badge-warning {
-  background-color: #fee685;
+  background-color: #ffda89;
 }
 .badge-danger {
-  background-color: #cd425b;
+  background-color: #8E1904;
 }
 .badge-accent-cool {
   background-color: #86b98e;

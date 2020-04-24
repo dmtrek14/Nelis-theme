@@ -16,16 +16,24 @@
 
 @active-text-breadcrumb: #565c65;
 /*Bootstrap overrides*/
-@primary : #2672de;
+//@primary : #2672de;
+@primary : lighten(@main, 10%);
+//@primary-hover: darken(@primary, 10%);
 @primary-hover: darken(@primary, 10%);
-@secondary: #6c757d;
-@info: #3a7d95;
+//@secondary: #6c757d;
+@secondary: @nav-text-base;
+@secondary-hover: lighten(@secondary, 10%);
+//@info: #3a7d95;
+@info: @secondary-warm;
 @info-hover: darken(@info, 10%);
-@success: #208738;
+//@success: #208738;
+@success: @accent-cool-base;
 @success-hover: darken(@success, 10%);
-@warning: #fee685;
+//@warning: #fee685;
+@warning: lighten(@accent-warm-base,10%);
 @warning-hover: darken(@warning, 10%);
-@danger: #cd425b;
+//@danger: #cd425b;
+@danger: #8E1904;
 @danger-hover: darken(@danger, 10%);
 @light-outline: #adadad;
 @dark: #343a40;

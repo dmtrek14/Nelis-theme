@@ -7,8 +7,9 @@
 		background-color: @primary;
 		border-color: @primary;
 
-		&:hover {
+		&:hover, &:focus {
 			background-color: @primary-hover;
+			border-color: @primary;
 		}
 	}
 
@@ -17,50 +18,86 @@
 		background-color: white;
 		color: @primary;
 
-		&:hover {
-			background-color: @primary-hover;
+		&:hover, &:focus {
+			background-color: @primary;
+			border-color: @primary-hover;
+			color:white;
+		}
+	}
+
+	&-secondary {
+		background-color: @secondary;
+		border-color: @secondary;
+
+		&:hover, &:focus  {
+			background-color: @secondary-hover;
 		}
 	}
 
 	&-outline-secondary {
 		background-color: white;
+
+		&:hover, &:focus  {
+			background-color: @secondary;
+			color:white;
+		}
 	}
 
 	&-info {
 		background-color: @info;
 		border-color: @info;
+		color:black;
 
 		&:hover {
 			background-color: @info-hover;
+			color:black;
+			border-color: darken(@info, 20%);
+		}
+		&:focus{
+			background-color: @info-hover;
+			color:black;
+			border-color: lighten(@info, 10%);
+			box-shadow: 0 0 0 .2rem lighten(@info, 10%);
 		}
 	}
 
 	&-outline-info {
 		border-color: @info;
 		background-color: white;
-		color: @info;
+		color: darken(@info, 30%);
 
 		&:hover {
 			background-color: @info-hover;
+			border-color: darken(@info, 30%);
+			color: black;
+		}
+		&:focus{
+			background-color: @info-hover;
+			color:black;
+			border-color: lighten(@info, 10%);
+			box-shadow: 0 0 0 .2rem lighten(@info, 10%);
 		}
 	}
 
 	&-success {
 		background-color: @success;
 		border-color: @success;
+		color: black;
 
-		&:hover {
+		&:hover, &:focus  {
 			background-color: @success-hover;
+			color: black;
 		}
 	}
 
 	&-outline-success {
 		border-color: @success;
 		background-color: white;
-		color: @success;
+		color: darken(@success, 30%);
 
-		&:hover {
+		&:hover, &:focus  {
 			background-color: @success-hover;
+			color: black;
 		}
 	}
 
@@ -68,7 +105,7 @@
 		background-color: @warning;
 		border-color: @warning;
 
-		&:hover {
+		&:hover, &:focus  {
 			background-color: @warning-hover;
 		}
 	}
@@ -78,8 +115,21 @@
 		background-color: white;
 		color: darken(@warning, 50%);
 
-		&:hover {
-			background-color: @warning-hover;
+		&:hover, &:focus  {
+			background-color: @warning;
+			border-color: @warning-hover;
+			color: black;
+		}
+		&:focus {
+			border-color: darken(@warning, 20%);
+			box-shadow: 0 0 0 .2rem darken(@warning, 20%);
+		}
+	}
+
+	&-light {
+		&:hover, &:focus {
+			background-color: @light-outline;
+			color:black;
 		}
 	}
 
@@ -88,8 +138,9 @@
 		background-color: white;
 		color: darken(@light-outline, 30%);
 
-		&:hover {
+		&:hover, &:focus {
 			background-color: @light-outline;
+			color:black;
 		}
 	}
 
@@ -97,9 +148,12 @@
 		background-color: @danger;
 		border-color: @danger;
 
-		&:hover {
+		&:hover, &:focus {
 			background-color: @danger-hover;
+			border-color: @danger;
+			color:white;
 		}
+
 	}
 
 	&-outline-danger {
@@ -107,11 +161,23 @@
 		background-color: white;
 		color: @danger;
 
-		&:hover {
+		&:hover, &:focus  {
 			background-color: @danger-hover;
+			border-color: @danger;
+			color:white;
 		}
 	}
 
+	&-outline-dark {
+		background-color: white;
+
+		&:hover, &:focus  {
+			background-color: @dark;
+			border-color: @dark;
+			color:white;
+		}
+	}
+	
 	&-link {
 		color: @link-base;
 	}

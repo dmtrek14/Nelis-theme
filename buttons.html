@@ -12,7 +12,7 @@
         <title>NELIS Bootstrap Theme - Buttons</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
             integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="/styles/styles.min.css">
+        <link rel="stylesheet" href="/styles/styles.css">
         <script src="https://kit.fontawesome.com/d174097705.js" crossorigin="anonymous" async></script>
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     </head>
@@ -32,6 +32,17 @@
                         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Buttons</li>
                     </ol>
+                    <div class="dropdown breadcrumb-dropdown mb-2 d-none">
+                        <button class="btn btn-dark btn-block btn-sm dropdown-toggle" type="button" id="breadcrumb-dropdown-mobile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Navigation</button>
+                        <div class="dropdown-menu" aria-labelledby="breadcrumb-dropdown-mobile">
+                            <div class="dropdown-item">
+                                <a href="index.html">Home</a>
+                            </div>
+                            <div class="dropdown-item active">
+                                Buttons
+                            </div>
+                        </div>
+                    </div>
                 </nav>
                 <p>Cards are used to set content apart in an elegant way. Pages with several divided sections of content are good places to use cards. Accent colors may be used in cards for visual appeal. Several variations of the theme styles for cards are shown below. 
 
@@ -76,7 +87,7 @@
                         <button type="button" class="btn btn-dark square">Dark</button>
                     </div>
                     <div class="col-12 mt-3">
-                        <h3>Button group - PLT Widgets</h3>
+                        <h3>Button group</h3>
                         <div class="btn-group btn-group-sm plt" role="group" aria-label="Basic example">
                             <button type="button" class="btn btn-outline-dark"><i class="fas fa-bookmark"
                                     aria-hidden="true"></i> Track</button>
