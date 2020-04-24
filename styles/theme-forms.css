@@ -2,7 +2,7 @@
 /*Bootstrap overrides*/
 /************************/
 .text-primary {
-  color: #42597c !important;
+  color: #53719e !important;
 }
 .text-secondary {
   color: #565c65 !important;
@@ -24,8 +24,8 @@ fieldset legend {
   position: relative;
 }
 .custom-control-input:checked ~ .custom-control-label::before {
-  border-color: #42597c;
-  background-color: #42597c;
+  border-color: #53719e;
+  background-color: #53719e;
 }
 @media (max-width: 992px) {
   .custom-control {

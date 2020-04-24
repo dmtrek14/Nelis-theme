@@ -2,7 +2,7 @@
 /*Bootstrap overrides*/
 /************************/
 .text-primary {
-  color: #42597c !important;
+  color: #53719e !important;
 }
 .text-secondary {
   color: #565c65 !important;
@@ -24,18 +24,18 @@
   box-shadow: 0 3px 5px 0 rgba(62, 57, 107, 0.07), 0 2px 4px 0 rgba(62, 57, 107, 0.06);
 }
 .alert.alert-primary {
-  color: #1e293a;
-  border-left: 10px solid #30415b;
-  background-color: #f6f8fa;
+  color: #30415b;
+  border-left: 10px solid #42597c;
+  background-color: #d4dce9;
 }
 .alert.alert-primary .alert-link {
-  color: #0d1118;
+  color: #1e293a;
 }
 .alert.alert-primary .alert-link:before {
-  background-color: #0d1118;
+  background-color: #1e293a;
 }
 .alert.alert-primary .alert-link:focus {
-  outline: 2px dashed #0d1118;
+  outline: 2px dashed #1e293a;
 }
 .alert.alert-secondary {
   border-left: 10px solid #3f4349;

@@ -2,7 +2,7 @@
 /*Bootstrap overrides*/
 /************************/
 .text-primary {
-  color: #42597c !important;
+  color: #53719e !important;
 }
 .text-secondary {
   color: #565c65 !important;
@@ -17,7 +17,7 @@
   color: #86b98e !important;
 }
 .text-primary {
-  color: #42597c;
+  color: #53719e;
 }
 .text-success {
   color: #86b98e;
@@ -36,22 +36,22 @@
 }
 /******* BUTTONS ***********/
 .btn-primary {
-  background-color: #42597c;
-  border-color: #42597c;
+  background-color: #53719e;
+  border-color: #53719e;
 }
 .btn-primary:hover,
 .btn-primary:focus {
   background-color: #30415b;
-  border-color: #42597c;
+  border-color: #53719e;
 }
 .btn-outline-primary {
-  border-color: #42597c;
+  border-color: #53719e;
   background-color: white;
-  color: #42597c;
+  color: #30415b;
 }
 .btn-outline-primary:hover,
 .btn-outline-primary:focus {
-  background-color: #42597c;
+  background-color: #53719e;
   border-color: #30415b;
   color: white;
 }
@@ -61,7 +61,7 @@
 }
 .btn-secondary:hover,
 .btn-secondary:focus {
-  background-color: #6d7581;
+  background-color: #3f4349;
 }
 .btn-outline-secondary {
   background-color: white;
@@ -206,7 +206,7 @@
   font-weight: 600;
 }
 .badge-primary {
-  background-color: #42597c;
+  background-color: #53719e;
 }
 .badge-info {
   background-color: #b0aaa6;
@@ -242,18 +242,18 @@
   box-shadow: 0 3px 5px 0 rgba(62, 57, 107, 0.07), 0 2px 4px 0 rgba(62, 57, 107, 0.06);
 }
 .alert.alert-primary {
-  color: #1e293a;
-  border-left: 10px solid #30415b;
-  background-color: #f6f8fa;
+  color: #30415b;
+  border-left: 10px solid #42597c;
+  background-color: #d4dce9;
 }
 .alert.alert-primary .alert-link {
-  color: #0d1118;
+  color: #1e293a;
 }
 .alert.alert-primary .alert-link:before {
-  background-color: #0d1118;
+  background-color: #1e293a;
 }
 .alert.alert-primary .alert-link:focus {
-  outline: 2px dashed #0d1118;
+  outline: 2px dashed #1e293a;
 }
 .alert.alert-secondary {
   border-left: 10px solid #3f4349;
@@ -734,8 +734,8 @@ fieldset legend {
   position: relative;
 }
 .custom-control-input:checked ~ .custom-control-label::before {
-  border-color: #42597c;
-  background-color: #42597c;
+  border-color: #53719e;
+  background-color: #53719e;
 }
 @media (max-width: 992px) {
   .custom-control {
@@ -1088,8 +1088,8 @@ fieldset legend {
   border-color: transparent;
 }
 .list-group-item-primary {
-  color: #1e293a;
-  background-color: #bdc9dc;
+  color: #30415b;
+  background-color: #dee5ee;
 }
 .list-group-item-success {
   color: #508959;

@@ -2,7 +2,7 @@
 /*Bootstrap overrides*/
 /************************/
 .text-primary {
-  color: #42597c !important;
+  color: #53719e !important;
 }
 .text-secondary {
   color: #565c65 !important;
@@ -21,7 +21,7 @@
   font-weight: 600;
 }
 .badge-primary {
-  background-color: #42597c;
+  background-color: #53719e;
 }
 .badge-info {
   background-color: #b0aaa6;

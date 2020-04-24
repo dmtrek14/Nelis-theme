@@ -2,7 +2,7 @@
 /*Bootstrap overrides*/
 /************************/
 .text-primary {
-  color: #42597c !important;
+  color: #53719e !important;
 }
 .text-secondary {
   color: #565c65 !important;
@@ -20,8 +20,8 @@
   border-color: transparent;
 }
 .list-group-item-primary {
-  color: #1e293a;
-  background-color: #bdc9dc;
+  color: #30415b;
+  background-color: #dee5ee;
 }
 .list-group-item-success {
   color: #508959;

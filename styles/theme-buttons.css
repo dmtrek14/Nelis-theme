@@ -2,7 +2,7 @@
 /*Bootstrap overrides*/
 /************************/
 .text-primary {
-  color: #42597c !important;
+  color: #53719e !important;
 }
 .text-secondary {
   color: #565c65 !important;
@@ -18,22 +18,22 @@
 }
 /******* BUTTONS ***********/
 .btn-primary {
-  background-color: #42597c;
-  border-color: #42597c;
+  background-color: #53719e;
+  border-color: #53719e;
 }
 .btn-primary:hover,
 .btn-primary:focus {
   background-color: #30415b;
-  border-color: #42597c;
+  border-color: #53719e;
 }
 .btn-outline-primary {
-  border-color: #42597c;
+  border-color: #53719e;
   background-color: white;
-  color: #42597c;
+  color: #30415b;
 }
 .btn-outline-primary:hover,
 .btn-outline-primary:focus {
-  background-color: #42597c;
+  background-color: #53719e;
   border-color: #30415b;
   color: white;
 }
@@ -43,7 +43,7 @@
 }
 .btn-secondary:hover,
 .btn-secondary:focus {
-  background-color: #6d7581;
+  background-color: #3f4349;
 }
 .btn-outline-secondary {
   background-color: white;
