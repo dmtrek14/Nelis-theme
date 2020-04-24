@@ -1,0 +1,53 @@
+@import "theme-colors.less";
+@import "theme-variables.less";
+
+.pagination {
+	@media (max-width:@screen-small) {
+		overflow-x: auto
+	}
+
+	li {
+		padding: 0.5rem 0.75rem;
+		border-radius: .2rem;
+
+		&:first-child {
+			border-left: 1px solid @pagination-outline;
+			border-bottom: 1px solid @pagination-outline;
+			border-top: 1px solid @pagination-outline;
+		}
+
+		&:not(:first-child):not(:last-child) {
+			border-left: 1px solid @pagination-outline;
+			border-top: 1px solid @pagination-outline;
+			border-bottom: 1px solid @pagination-outline;
+		}
+
+		&:not(:first-child) {
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+		}
+
+		&:not(:last-child) {
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+		}
+
+		&:last-child {
+			border: 1px solid @pagination-outline;
+		}
+
+		&.active {
+			background-color: lighten(@main, 20%);
+			color: white;
+		}
+
+		&:hover {
+			background-color: lighten(@main, 20%);
+			color: white;
+
+			a {
+				color: white;
+			}
+		}
+	}
+}

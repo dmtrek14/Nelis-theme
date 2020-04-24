@@ -16,6 +16,9 @@
 .text-success {
   color: #208738 !important;
 }
+.list-group.borderless .list-group-item {
+  border-color: transparent;
+}
 .list-group-item-primary {
   color: #154589;
   background-color: #e4eefb;
@@ -74,4 +77,13 @@
 .list-group-item-accent-cool-lighten-20 {
   background-color: #c7deca !important;
   color: black;
+}
+@media (min-width: 768px) {
+  .list-group-item.bill-progress {
+    border-left-color: transparent;
+    border-right-color: transparent;
+  }
+  .list-group-item.bill-progress + li {
+    border-left-color: transparent;
+  }
 }

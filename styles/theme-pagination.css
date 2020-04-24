@@ -1,0 +1,59 @@
+/******* COLORS ***********/
+/*Bootstrap overrides*/
+/************************/
+.text-primary {
+  color: #2672de !important;
+}
+.text-secondary {
+  color: #6c757d !important;
+}
+.text-info {
+  color: #3a7d95 !important;
+}
+.text-danger {
+  color: #cd425b !important;
+}
+.text-success {
+  color: #208738 !important;
+}
+@media (max-width: 768px) {
+  .pagination {
+    overflow-x: auto;
+  }
+}
+.pagination li {
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.2rem;
+}
+.pagination li:first-child {
+  border-left: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+  border-top: 1px solid #dee2e6;
+}
+.pagination li:not(:first-child):not(:last-child) {
+  border-left: 1px solid #dee2e6;
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+}
+.pagination li:not(:first-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.pagination li:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.pagination li:last-child {
+  border: 1px solid #dee2e6;
+}
+.pagination li.active {
+  background-color: #53719e;
+  color: white;
+}
+.pagination li:hover {
+  background-color: #53719e;
+  color: white;
+}
+.pagination li:hover a {
+  color: white;
+}

@@ -1,0 +1,33 @@
+/******* COLORS ***********/
+/*Bootstrap overrides*/
+/************************/
+.text-primary {
+  color: #2672de !important;
+}
+.text-secondary {
+  color: #6c757d !important;
+}
+.text-info {
+  color: #3a7d95 !important;
+}
+.text-danger {
+  color: #cd425b !important;
+}
+.text-success {
+  color: #208738 !important;
+}
+.text-primary {
+  color: #2672de;
+}
+.text-success {
+  color: #208738;
+}
+.text-danger {
+  color: #cd425b;
+}
+.text-warning {
+  color: #836901;
+}
+.text-info {
+  color: #3a7d95;
+}

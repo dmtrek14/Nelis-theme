@@ -1,0 +1,188 @@
+<nav class="navbar navbar-expand-md nelis-header bg-main navbar-dark" aria-label="Sitewide navigation">
+    <div class="navbar-wrapper">
+        <div class="navbar-header">
+            <a id="skip-link" href="javascript:skipToMainContent();">Skip to main content</a>
+            <ul class="nav navbar-nav flex-row">
+                <button id="toggleNelisMain" class="navbar-toggler d-md-none mr-auto" type="button"
+                          data-toggle="collapse" data-target="#nelisMain" aria-controls="nelisMain"
+                          aria-expanded="false" aria-label="Toggle nelis navigation">
+                    <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+                </button>
+                <li class="nav-item">
+                    <a class="navbar-brand align-middle" href="#">
+                        <span class="nelis-header-logo">NELIS</span>
+                    </a>
+                </li>
+                <li class="nav-item d-md-none">
+                    <button id="toggleNvLeg"
+                              class="nav-link open-navbar-container navbar-toggler" data-toggle="collapse"
+                              data-target="#navbar-mobile" aria-label="Toggle legislature menu navigation">
+                        <i class="fa fa-ellipsis-v fa-lg"></i>
+                    </button>
+                </li>
+            </ul>
+                <div class="ml-2 dev-environment d-none d-md-inline-flex">
+                    <span class="badge badge-warning"><i class="fas fa-database"></i> datasource</span>
+                    <span class="badge badge-success"><i class="fas fa-dungeon"></i> SQL Dependency Disabled</span>
+                    <span class="badge badge-warning"><i class="fas fa-lock"></i> Production Web Service</span>
+                </div>
+        </div>
+        <div class="navbar-container">
+            <div class="collapse navbar-collapse" id="navbar-mobile">
+                <ul class="nav navbar-nav mr-auto float-left">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="nvleg" href="#" data-toggle="dropdown"
+                            data-offset="-50,5" aria-haspopup="true" aria-expanded="false">
+                            Nevada
+                            Legislature
+                        </a>
+                        <div class="dropdown-menu nvleg bg-main-lighten-20" aria-labelledby="nvleg">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="nav flex-column">
+                                            <div class="nav-item">
+                                                <a href="/" class="nav-link font-weight-bold h5">Home</a>
+                                            </div>
+                                            <div class="dropdown-divider">
+                                            </div>
+                                            <div class="nav-item">
+                                                <span class="nav-link font-weight-bold h5">Session</span>
+                                            </div>
+                                            <div class="nav-item pl-2">
+                                                <a class="nav-link" href="#">Session Information (2011-current)</a>
+                                            </div>
+                                            <div class="nav-item pl-2">
+                                                <a class="nav-link" href="#">Session Information (pre-2011)</a>
+                                            </div>
+                                            <div class="dropdown-divider">
+                                            </div>
+                                            <div class="nav-item">
+                                                <a class="nav-link font-weight-bold h5" href="#">Interim Committees</a>
+                                            </div>
+                                            <div class="dropdown-divider">
+                                            </div>
+                                            <div class="nav-item">
+                                                <span class="font-weight-bold nav-link h5">Meetings</span>
+                                            </div>
+                                            <div class="nav-item pl-2">
+                                                <a class="nav-link" href="#">Calendar of Meetings</a>
+                                            </div>
+                                            <div class="nav-item pl-2">
+                                                <a class="nav-link" href="#">View Archived Meetings</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="nav flex-column">
+                                            <div class="nav-item">
+                                                <a href="#" class="nav-link font-weight-bold h5">Senate</a>
+                                            </div>
+                                            <div class="dropdown-divider">
+                                            </div>
+                                            <div class="nav-item">
+                                                <a class="nav-link font-weight-bold h5" href="#">Assembly</a>
+                                            </div>
+                                            <div class="dropdown-divider">
+                                            </div>
+                                            <div class="nav-item">
+                                                <span class="nav-link font-weight-bold h5">Legislators</span>
+                                            </div>
+                                            <div class="nav-item pl-2">
+                                                <a class="nav-link" href="#">Find your Legislators</a>
+                                            </div>
+                                            <div class="nav-item pl-2">
+                                                <a class="nav-link" href="#">Senators</a>
+                                            </div>
+                                            <div class="nav-item pl-2">
+                                                <a class="nav-link" href="#">Assembly Members</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="nav flex-column">
+                                            <div class="nav-item">
+                                                <span class="nav-link font-weight-bold h5">Laws &amp; Regulations</span>
+                                            </div>
+                                            <div class="nav-item pl-2">
+                                                <a href="#" class="nav-link">Nevada Revised Statutes</a>
+                                            </div>
+                                            <div class="nav-item pl-2">
+                                                <a class="nav-link" href="#">Statutes of Nevada</a>
+                                            </div>
+                                            <div class="nav-item pl-2">
+                                                <a class="nav-link" href="#">Nevada Constitution</a>
+                                            </div>
+                                            <div class="nav-item pl-2">
+                                                <a class="nav-link" href="#">Nevada Administrative Code</a>
+                                            </div>
+                                            <div class="nav-item pl-2">
+                                                <a class="nav-link" href="#">Nevada Register</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="nav flex-column">
+                                            <div class="nav-item">
+                                                <span class="nav-link font-weight-bold h5">Legislative Counsel Bureau</span>
+                                            </div>
+                                            <div class="nav-item pl-2">
+                                                <a class="nav-link" href="#">Director's Office</a>
+                                            </div>
+                                            <div class="nav-item pl-2">
+                                                <a class="nav-link" href="#">Administrative Division</a>
+                                            </div>
+                                            <div class="nav-item pl-2">
+                                                <a class="nav-link" href="#">Audit Division</a>
+                                            </div>
+                                            <div class="nav-item pl-2">
+                                                <a class="nav-link" href="#">Fiscal Analysis Division</a>
+                                            </div>
+                                            <div class="nav-item pl-2">
+                                                <a class="nav-link" href="#">Legal Division</a>
+                                            </div>
+                                            <div class="nav-item pl-2">
+                                                <a class="nav-link" href="#">Research Division</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav float-right">
+                    <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-right" href="#" id="userMenu"
+                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-user-circle" aria-hidden="true"></i> Sign in/Register
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right bg-main-lighten-20" aria-labelledby="userMenu">
+                                <a class="dropdown-item" href=#"><i class="fas fa-user-plus" aria-hidden="false"></i> Register</a>
+                                <a class="dropdown-item" href="#"><i class="fas fa-sign-in-alt" aria-hidden="true"></i> Sign in</a>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="bg-main navbar-dark row flex-no-wrap justify-content-between align-items-center header-divider mx-0 p-1">
+    <div class="col-sm-12 col-md-6 d-flex justify-content-between">
+        <div class="dropdown">
+            <a class="dropdown-toggle" id="session" href="#" data-toggle="dropdown" data-offset="30,0"
+                aria-haspopup="true" aria-expanded="false">
+                Select a session
+            </a>
+            <div class="dropdown-menu" aria-labelledby="session">
+                <a class="dropdown-item" href="#">80th (2019) Sesion</a>
+                <a class="dropdown-item" href="#">Another session</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+        </div>
+        <div class="text-right font-weight-bold">80th (2019) Session</div>
+    </div>
+    <div class="col-sm-12 col-md-6 text-right d-none d-md-block days-remaining">
+        Friday, December 27, 2019 - The 80th Session adjourned Sine Die on June 3, 2019
+    </div>
+</div>

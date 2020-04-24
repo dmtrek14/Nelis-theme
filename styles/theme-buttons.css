@@ -106,3 +106,10 @@
 .btn-link {
   color: #345d96;
 }
+.favorite-toggle {
+  border: none;
+  background-color: transparent;
+}
+.favorite-toggle .fa-star {
+  color: #3d4551;
+}

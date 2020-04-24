@@ -1,77 +1,97 @@
 @import "theme-colors.less";
+@import "theme-variables.less";
+
+.list-group {
+	&.borderless {
+		.list-group-item {
+			border-color: transparent;
+		}
+	}
+}
 
 .list-group-item {
-    &-primary {
-        color: darken(@primary, 20%);
-        background-color: lighten(@primary, 43%);
-    }
+	&-primary {
+		color: darken(@primary, 20%);
+		background-color: lighten(@primary, 43%);
+	}
 
-    &-success {
-        color: darken(@success, 20%);
-        background-color: lighten(@success, 58%);
-    }
+	&-success {
+		color: darken(@success, 20%);
+		background-color: lighten(@success, 58%);
+	}
 
-    &-danger {
-        color: darken(@danger, 20%);
-        background-color: lighten(@danger, 40%);
-    }
+	&-danger {
+		color: darken(@danger, 20%);
+		background-color: lighten(@danger, 40%);
+	}
 
-    &-warning {
-        color: darken(@warning, 50%);
-        background-color: lighten(@warning, 15%);
-    }
+	&-warning {
+		color: darken(@warning, 50%);
+		background-color: lighten(@warning, 15%);
+	}
 
-    &-info {
-        color: darken(@info, 20%);
-        background-color: lighten(@info, 47%);
-    }
+	&-info {
+		color: darken(@info, 20%);
+		background-color: lighten(@info, 47%);
+	}
 
-    &-light {
-        color: darken(@secondary, 10%);
-    }
+	&-light {
+		color: darken(@secondary, 10%);
+	}
 
-    &-secondary-warm {
-        background-color: @secondary-warm  !important;
-        color: black;
-    }
+	&-secondary-warm {
+		background-color: @secondary-warm !important;
+		color: black;
+	}
 
-    &-secondary-warm-lighten-10 {
-        background-color: lighten(@secondary-warm, 10%) !important;
-        color: black;
-    }
+	&-secondary-warm-lighten-10 {
+		background-color: lighten(@secondary-warm, 10%) !important;
+		color: black;
+	}
 
-    &-secondary-warm-lighten-20 {
-        background-color: lighten(@secondary-warm, 20%) !important;
-        color: black;
-    }
+	&-secondary-warm-lighten-20 {
+		background-color: lighten(@secondary-warm, 20%) !important;
+		color: black;
+	}
 
-    &-accent-warm {
-        background-color: @accent-warm-base  !important;
-        color: black;
-    }
+	&-accent-warm {
+		background-color: @accent-warm-base !important;
+		color: black;
+	}
 
-    &-accent-warm-lighten-10 {
-        background-color: lighten(@accent-warm-base, 10%) !important;
-        color: black;
-    }
+	&-accent-warm-lighten-10 {
+		background-color: lighten(@accent-warm-base, 10%) !important;
+		color: black;
+	}
 
-    &-accent-warm-lighten-20 {
-        background-color: lighten(@accent-warm-base, 20%) !important;
-        color: black;
-    }
+	&-accent-warm-lighten-20 {
+		background-color: lighten(@accent-warm-base, 20%) !important;
+		color: black;
+	}
 
-    &-accent-cool {
-        background-color: @accent-cool-base  !important;
-        color: black;
-    }
+	&-accent-cool {
+		background-color: @accent-cool-base !important;
+		color: black;
+	}
 
-    &-accent-cool-lighten-10 {
-        background-color: lighten(@accent-cool-base, 10%) !important;
-        color: black;
-    }
+	&-accent-cool-lighten-10 {
+		background-color: lighten(@accent-cool-base, 10%) !important;
+		color: black;
+	}
 
-    &-accent-cool-lighten-20 {
-        background-color: lighten(@accent-cool-base, 20%) !important;
-        color: black;
-    }
+	&-accent-cool-lighten-20 {
+		background-color: lighten(@accent-cool-base, 20%) !important;
+		color: black;
+	}
+
+	&.bill-progress {
+		@media (min-width: @screen-small) {
+			border-left-color: transparent;
+			border-right-color: transparent;
+
+			+ li {
+				border-left-color: transparent;
+			}
+		}
+	}
 }
