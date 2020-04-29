@@ -7,7 +7,7 @@
 		background-color: @primary;
 		border-color: @primary;
 
-		&:hover, &:focus {
+		&:hover, &:focus, &:active, &:not(:disabled):not(.disabled):active {
 			background-color: @primary-hover;
 			border-color: @primary;
 		}
@@ -18,7 +18,7 @@
 		background-color: white;
 		color: darken(@primary, 20%);
 
-		&:hover, &:focus {
+		&:hover, &:focus, &:active, &:not(:disabled):not(.disabled):active {
 			background-color: @primary;
 			border-color: @primary-hover;
 			color:white;
@@ -29,7 +29,7 @@
 		background-color: @secondary;
 		border-color: @secondary;
 
-		&:hover, &:focus  {
+		&:hover, &:focus, &:active, &:not(:disabled):not(.disabled):active {
 			background-color: @secondary-hover;
 		}
 	}
@@ -37,7 +37,7 @@
 	&-outline-secondary {
 		background-color: white;
 
-		&:hover, &:focus  {
+		&:hover, &:focus, &:active, &:not(:disabled):not(.disabled):active {
 			background-color: @secondary;
 			color:white;
 		}
@@ -53,7 +53,7 @@
 			color:black;
 			border-color: darken(@info, 20%);
 		}
-		&:focus{
+		&:focus, &:active, &:not(:disabled):not(.disabled):active{
 			background-color: @info-hover;
 			color:black;
 			border-color: lighten(@info, 10%);
@@ -71,7 +71,7 @@
 			border-color: darken(@info, 30%);
 			color: black;
 		}
-		&:focus{
+		&:focus, &:active, &:not(:disabled):not(.disabled):active{
 			background-color: @info-hover;
 			color:black;
 			border-color: lighten(@info, 10%);
@@ -84,7 +84,7 @@
 		border-color: @success;
 		color: black;
 
-		&:hover, &:focus  {
+		&:hover, &:focus, &:active, &:not(:disabled):not(.disabled):active {
 			background-color: @success-hover;
 			color: black;
 		}
@@ -95,7 +95,7 @@
 		background-color: white;
 		color: darken(@success, 30%);
 
-		&:hover, &:focus  {
+		&:hover, &:focus, &:active, &:not(:disabled):not(.disabled):active  {
 			background-color: @success-hover;
 			color: black;
 		}
@@ -105,7 +105,7 @@
 		background-color: @warning;
 		border-color: @warning;
 
-		&:hover, &:focus  {
+		&:hover, &:focus, &:active, &:not(:disabled):not(.disabled):active {
 			background-color: @warning-hover;
 		}
 	}
@@ -115,7 +115,7 @@
 		background-color: white;
 		color: darken(@warning, 50%);
 
-		&:hover, &:focus  {
+		&:hover, &:focus, &:active, &:not(:disabled):not(.disabled):active  {
 			background-color: @warning;
 			border-color: @warning-hover;
 			color: black;
@@ -127,7 +127,7 @@
 	}
 
 	&-light {
-		&:hover, &:focus {
+		&:hover, &:focus, &:active, &:not(:disabled):not(.disabled):active {
 			background-color: @light-outline;
 			color:black;
 		}
@@ -138,7 +138,7 @@
 		background-color: white;
 		color: darken(@light-outline, 30%);
 
-		&:hover, &:focus {
+		&:hover, &:focus, &:active, &:not(:disabled):not(.disabled):active {
 			background-color: @light-outline;
 			color:black;
 		}
@@ -148,7 +148,7 @@
 		background-color: @danger;
 		border-color: @danger;
 
-		&:hover, &:focus {
+		&:hover, &:focus, &:active, &:not(:disabled):not(.disabled):active {
 			background-color: @danger-hover;
 			border-color: @danger;
 			color:white;
@@ -161,7 +161,7 @@
 		background-color: white;
 		color: @danger;
 
-		&:hover, &:focus  {
+		&:hover, &:focus, &:active, &:not(:disabled):not(.disabled):active  {
 			background-color: @danger-hover;
 			border-color: @danger;
 			color:white;
@@ -171,7 +171,7 @@
 	&-outline-dark {
 		background-color: white;
 
-		&:hover, &:focus  {
+		&:hover, &:focus, &:active, &:not(:disabled):not(.disabled):active  {
 			background-color: @dark;
 			border-color: @dark;
 			color:white;
