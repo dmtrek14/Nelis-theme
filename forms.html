@@ -17,7 +17,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     </head>
 
-<body class="bg-complement bootstrap-fs-modal">
+<body class="bg-body bootstrap-fs-modal">
     <header id="mainMenu">
 
     </header>
@@ -25,11 +25,9 @@
     </nav>
     <main id="main-content" tabindex="-2" class="container-fluid pb-md-4">
         <div class="row">
-            <!-- <div class="col-lg-3 pt-4">
-                <p>Sidebar - where treeview will go</p>
-                <p>On mobile, only show search above treeview</p>
-            </div> -->
-            <div class="col-lg-12 pt-4 main-content">
+            <div id="sidebar" class="col-lg-3 pt-4">
+            </div>
+            <div class="col-lg-9 pt-4 pb-5 main-content">
                 <h1>NELIS Bootstrap Theme - Forms</h1>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
@@ -193,6 +191,7 @@
         $(document).ready(function() {
             $("#mainMenu").load('header.html');
             $("#nelisMenu").load('menu.html');
+            $("#sidebar").load('sidebar.html');
             $("#footer").load('footer.html');
         }); 
     </script>
