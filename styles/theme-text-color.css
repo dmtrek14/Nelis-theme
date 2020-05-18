@@ -16,3 +16,21 @@
 .text-success {
   color: #86b98e !important;
 }
+.text-primary {
+  color: #53719e;
+}
+.text-success {
+  color: #86b98e;
+}
+.text-danger {
+  color: #8E1904;
+}
+.text-warning {
+  color: #895e00;
+}
+.text-info {
+  color: #b0aaa6;
+}
+.text-dark {
+  color: #343a40;
+}

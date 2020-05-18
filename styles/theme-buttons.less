@@ -3,118 +3,191 @@
 /******* BUTTONS ***********/
 
 .btn {
-  &-primary {
-    background-color: @primary;
-    border-color: @primary;
+	&-primary {
+		background-color: @primary;
+		border-color: @primary;
 
-    &:hover {
-      background-color: @primary-hover;
-    }
-  }
+		&:hover, &:focus, &:active, &:not(:disabled):not(.disabled):active {
+			background-color: @primary-hover;
+			border-color: @primary;
+		}
+	}
 
-  &-outline-primary {
-    border-color: @primary;
-    background-color: white;
-    color: @primary;
+	&-outline-primary {
+		border-color: @primary;
+		background-color: white;
+		color: darken(@primary, 20%);
 
-    &:hover {
-      background-color: @primary-hover;
-    }
-  }
+		&:hover, &:focus, &:active, &:not(:disabled):not(.disabled):active {
+			background-color: @primary;
+			border-color: @primary-hover;
+			color:white;
+		}
+	}
 
-  &-outline-secondary {
-    background-color: white;
+	&-secondary {
+		background-color: @secondary;
+		border-color: @secondary;
 
-  }
+		&:hover, &:focus, &:active, &:not(:disabled):not(.disabled):active {
+			background-color: @secondary-hover;
+		}
+	}
 
-  &-info {
-    background-color: @info;
-    border-color: @info;
+	&-outline-secondary {
+		background-color: white;
 
-    &:hover {
-      background-color: @info-hover;
-    }
-  }
+		&:hover, &:focus, &:active, &:not(:disabled):not(.disabled):active {
+			background-color: @secondary;
+			color:white;
+		}
+	}
 
-  &-outline-info {
-    border-color: @info;
-    background-color: white;
-    color: @info;
+	&-info {
+		background-color: @info;
+		border-color: @info;
+		color:black;
 
-    &:hover {
-      background-color: @info-hover;
-    }
-  }
+		&:hover {
+			background-color: @info-hover;
+			color:black;
+			border-color: darken(@info, 20%);
+		}
+		&:focus, &:active, &:not(:disabled):not(.disabled):active{
+			background-color: @info-hover;
+			color:black;
+			border-color: lighten(@info, 10%);
+			box-shadow: 0 0 0 .2rem lighten(@info, 10%);
+		}
+	}
 
-  &-success {
-    background-color: @success;
-    border-color: @success;
+	&-outline-info {
+		border-color: @info;
+		background-color: white;
+		color: darken(@info, 30%);
 
-    &:hover {
-      background-color: @success-hover;
-    }
-  }
+		&:hover {
+			background-color: @info-hover;
+			border-color: darken(@info, 30%);
+			color: black;
+		}
+		&:focus, &:active, &:not(:disabled):not(.disabled):active{
+			background-color: @info-hover;
+			color:black;
+			border-color: lighten(@info, 10%);
+			box-shadow: 0 0 0 .2rem lighten(@info, 10%);
+		}
+	}
 
-  &-outline-success {
-    border-color: @success;
-    background-color: white;
-    color: @success;
+	&-success {
+		background-color: @success;
+		border-color: @success;
+		color: black;
 
-    &:hover {
-      background-color: @success-hover;
-    }
-  }
+		&:hover, &:focus, &:active, &:not(:disabled):not(.disabled):active {
+			background-color: @success-hover;
+			color: black;
+		}
+	}
 
-  &-warning {
-    background-color: @warning;
-    border-color: @warning;
+	&-outline-success {
+		border-color: @success;
+		background-color: white;
+		color: darken(@success, 30%);
 
-    &:hover {
-      background-color: @warning-hover;
-      ;
-    }
-  }
+		&:hover, &:focus, &:active, &:not(:disabled):not(.disabled):active  {
+			background-color: @success-hover;
+			color: black;
+		}
+	}
 
-  &-outline-warning {
-    border-color: darken(@warning, 50%);
-    background-color: white;
-    color: darken(@warning, 50%);
+	&-warning {
+		background-color: @warning;
+		border-color: @warning;
 
-    &:hover {
-      background-color: @warning-hover;
-    }
-  }
+		&:hover, &:focus, &:active, &:not(:disabled):not(.disabled):active {
+			background-color: @warning-hover;
+		}
+	}
 
-  &-outline-light {
-    border-color: darken(@light-outline, 30%);
-    background-color: white;
-    color: darken(@light-outline, 30%);
+	&-outline-warning {
+		border-color: darken(@warning, 50%);
+		background-color: white;
+		color: darken(@warning, 50%);
 
-    &:hover {
-      background-color: @light-outline;
-    }
-  }
+		&:hover, &:focus, &:active, &:not(:disabled):not(.disabled):active  {
+			background-color: @warning;
+			border-color: @warning-hover;
+			color: black;
+		}
+		&:focus {
+			border-color: darken(@warning, 20%);
+			box-shadow: 0 0 0 .2rem darken(@warning, 20%);
+		}
+	}
 
-  &-danger {
-    background-color: @danger;
-    border-color: @danger;
+	&-light {
+		&:hover, &:focus, &:active, &:not(:disabled):not(.disabled):active {
+			background-color: @light-outline;
+			color:black;
+		}
+	}
 
-    &:hover {
-      background-color: @danger-hover;
-    }
-  }
+	&-outline-light {
+		border-color: darken(@light-outline, 30%);
+		background-color: white;
+		color: darken(@light-outline, 30%);
 
-  &-outline-danger {
-    border-color: @danger;
-    background-color: white;
-    color: @danger;
+		&:hover, &:focus, &:active, &:not(:disabled):not(.disabled):active {
+			background-color: @light-outline;
+			color:black;
+		}
+	}
 
-    &:hover {
-      background-color: @danger-hover;
-    }
-  }
+	&-danger {
+		background-color: @danger;
+		border-color: @danger;
 
-  &-link {
-    color: @link-base;
-  }
+		&:hover, &:focus, &:active, &:not(:disabled):not(.disabled):active {
+			background-color: @danger-hover;
+			border-color: @danger;
+			color:white;
+		}
+
+	}
+
+	&-outline-danger {
+		border-color: @danger;
+		background-color: white;
+		color: @danger;
+
+		&:hover, &:focus, &:active, &:not(:disabled):not(.disabled):active  {
+			background-color: @danger-hover;
+			border-color: @danger;
+			color:white;
+		}
+	}
+
+	&-outline-dark {
+		background-color: white;
+
+		&:hover, &:focus, &:active, &:not(:disabled):not(.disabled):active  {
+			background-color: @dark;
+			border-color: @dark;
+			color:white;
+		}
+	}
+	
+	&-link {
+		color: @link-base;
+	}
+}
+
+.favorite-toggle {
+	border: none;
+	background-color: transparent;
+
+	.fa-star {
+		color: @header-text-base;
+	}
 }

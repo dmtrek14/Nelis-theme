@@ -2,19 +2,19 @@
 /*Bootstrap overrides*/
 /************************/
 .text-primary {
-  color: #2672de !important;
+  color: #53719e !important;
 }
 .text-secondary {
-  color: #6c757d !important;
+  color: #565c65 !important;
 }
 .text-info {
-  color: #3a7d95 !important;
+  color: #b0aaa6 !important;
 }
 .text-danger {
-  color: #cd425b !important;
+  color: #8E1904 !important;
 }
 .text-success {
-  color: #208738 !important;
+  color: #86b98e !important;
 }
 .card {
   margin-bottom: 1.875rem;

@@ -1,0 +1,34 @@
+/******* COLORS ***********/
+/*Bootstrap overrides*/
+/************************/
+.text-primary {
+  color: #53719e !important;
+}
+.text-secondary {
+  color: #565c65 !important;
+}
+.text-info {
+  color: #b0aaa6 !important;
+}
+.text-danger {
+  color: #8E1904 !important;
+}
+.text-success {
+  color: #86b98e !important;
+}
+fieldset legend {
+  margin-bottom: 0 !important;
+  top: unset;
+  font-size: 1rem;
+  text-align: left;
+  position: relative;
+}
+.custom-control-input:checked ~ .custom-control-label::before {
+  border-color: #53719e;
+  background-color: #53719e;
+}
+@media (max-width: 992px) {
+  .custom-control {
+    margin: 0.8rem;
+  }
+}

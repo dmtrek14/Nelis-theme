@@ -2,7 +2,7 @@
 @main: #30415b;
 @text-on-main-bg: #fcfcfc;
 @background-base: #fbfcfd;
-@background-body: #f0f0f0;
+@background-body: #f0f0f0 ;
 @header-text-base: #3d4551;
 @nav-text-base: #565c65;
 @link-base: #345d96;
@@ -16,34 +16,46 @@
 
 @active-text-breadcrumb: #565c65;
 /*Bootstrap overrides*/
-@primary : #2672de;
-@primary-hover: darken(@primary, 10%);
-@secondary: #6c757d;
-@info: #3a7d95;
+//@primary : #2672de;
+@primary : lighten(@main, 20%);
+//@primary-hover: darken(@primary, 10%);
+@primary-hover: darken(@primary, 20%);
+//@secondary: #6c757d;
+@secondary: @nav-text-base;
+@secondary-hover: darken(@secondary, 10%);
+//@info: #3a7d95;
+@info: @secondary-warm;
 @info-hover: darken(@info, 10%);
-@success: #208738;
+//@success: #208738;
+@success: @accent-cool-base;
 @success-hover: darken(@success, 10%);
-@warning: #fee685;
+//@warning: #fee685;
+@warning: lighten(@accent-warm-base,10%);
 @warning-hover: darken(@warning, 10%);
-@danger: #cd425b;
+//@danger: #cd425b;
+@danger: #8E1904;
 @danger-hover: darken(@danger, 10%);
 @light-outline: #adadad;
 @dark: #343a40;
-
+@pagination-outline: #dee2e6;
 /************************/
 
 .text-primary {
-    color:@primary !important;
+	color: @primary !important;
 }
+
 .text-secondary {
-    color: @secondary !important;
+	color: @secondary !important;
 }
+
 .text-info {
-    color: @info !important;
+	color: @info !important;
 }
+
 .text-danger {
-    color: @danger !important;
+	color: @danger !important;
 }
+
 .text-success {
-    color: @success !important;
+	color: @success !important;
 }
