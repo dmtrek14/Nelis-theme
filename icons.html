@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <meta name="description" content="A theme for the Nevada Legislature site">
+    <meta name="theme-color" content="#30415b"/>
+    <link rel="shortcut icon" href="/Nelis-theme//images/favicon.ico">
+    <link rel="preconnect" href="https://kit.fontawesome.com/" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://stackpath.bootstrapcdn.com/" crossorigin="anonymous"/>
+    <title>NELIS Bootstrap Theme</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Nelis-theme/styles/styles.css">
+    <script src="https://kit.fontawesome.com/d174097705.js" crossorigin="anonymous" async></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+</head>
+
+<body class="bg-body bootstrap-fs-modal">
+    <header id="mainMenu"></header>
+    <nav id="nelisMenu" class="navbar navbar-light bg-complement navbar-expand-md sticky-top justify-content-between navbar-shadow navbar-without-dd-arrow nelis-menu">
+    </nav>
+    <main id="main-content" tabindex="-2" class="container-fluid pb-md-4">
+        <div class="row">
+            <div id=sidebar class="col-lg-3 pt-4">
+               
+            </div>
+            <div class="col-lg-9 pt-4 main-content">
+                <h1>NELIS Bootstrap Theme</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Second layer</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Current page</li>
+                    </ol>
+                </nav>
+                <p>Lorem ipsum dolor amet portland cloud bread jean shorts austin pug tumeric <a href="">messenger
+                        bag</a>. Pabst heirloom 90's pok pok aesthetic coloring book kitsch succulents pork belly
+                    church-key street art fingerstache quinoa messenger bag. Scenester sustainable activated charcoal
+                    meditation truffaut tumeric, godard offal vape coloring book lyft. Single-origin coffee truffaut
+                    fashion axe PBR&B, craft beer kickstarter deep v try-hard cloud bread selfies church-key. Ugh blue
+                    bottle woke, tilde mustache sriracha selfies literally gochujang deep v waistcoat fam cronut.
+
+                </p>
+                <div class="row">
+                    <div class="col">
+                        <h2>Icons</h2>
+                        <hr class="my-2">
+                        <div class="row">
+                            <div class="col">
+                                <h3>Icon Set</h3>
+                                <p>FontAwesome free svg.</p>
+                            </div>                          
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <h3>Icon Usage</h3>
+                                <p>Lorem ipsum</p>
+                            </div>                          
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </main>
+    <div class="drag-target"></div>
+    <div class="tap-target"></div>
+    <footer id="footer">
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <!--here for testing touch functionality-->
+    <!-- <script src="/src/touchemulator.js"></script>
+    <script>
+        TouchEmulator();
+    </script> -->
+    <!--end testing script-->
+    <script src="/Nelis-theme/src/hammer.min.js"></script>
+    <script src="/Nelis-theme/src/jquery.hammer.js"></script>
+    <script src="/Nelis-theme/src/app.js"></script>
+    <script>
+        		function skipToMainContent(e) {
+			$("#main-content").focus();
+			$(window).scrollTop(0);
+		}
+        $(document).ready(function() {
+            $("#mainMenu").load('header.html');
+            $("#nelisMenu").load('menu.html');
+            $("#sidebar").load('sidebar.html');
+            $("#footer").load('footer.html');
+        });
+    
+    </script>
+
+</body>
+
+</html>
